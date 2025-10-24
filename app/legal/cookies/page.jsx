@@ -1,0 +1,1 @@
+export const metadata={title:'Cookies — Lelly Mosaïque'};export default function Cookies(){return(<main className='section'><div className='container card'><h1>Cookies</h1><p>Cookie technique de consentement uniquement. Aucune analytics par défaut.</p></div></main>)}

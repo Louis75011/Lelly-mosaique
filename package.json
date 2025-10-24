@@ -1,0 +1,24 @@
+{
+  "name": "lelly-mosaique",
+  "private": true,
+  "version": "0.2.0",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "lint": "eslint .",
+    "preview:cf": "npx @cloudflare/next-on-pages@1",
+    "build:cf": "npx @cloudflare/next-on-pages@1 --experimental-minify"
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.5",
+    "sass": "1.80.3"
+  }
+}

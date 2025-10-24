@@ -1,0 +1,1 @@
+import styles from './StatBadge.module.scss';export default function StatBadge({label,value,note}){return(<div className={styles.badge}><span>{label}</span><span className={styles.value}>{value}</span><span className='text-muted'>{note}</span></div>)}

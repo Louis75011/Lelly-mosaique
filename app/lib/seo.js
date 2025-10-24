@@ -1,0 +1,1 @@
+export const seoBase=()=>({title:'Lelly Mosaïque',description:'Bibliothèque artistique et patrimoine mosaïste de Nelly Charamnac.',metadataBase:new URL(process.env.NEXT_PUBLIC_SITE_URL||'http://localhost:3000'),openGraph:{type:'website',title:'Lelly Mosaïque'}});

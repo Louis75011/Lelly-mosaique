@@ -1,0 +1,1 @@
+import Link from 'next/link';import styles from './Navbar.module.scss';export default function Navbar(){return(<div className={styles.wrap}><Link className='text-muted' href='mailto:louis.rouanet@gallia-os.com'>Nous écrire</Link></div>)}

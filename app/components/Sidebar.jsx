@@ -40,7 +40,7 @@ export default function Sidebar() {
               <img src="/icons/mosaic.svg" alt="" width="20" height="20" />
               <div>
                 <div className={styles.brandTitle}>Lelly Mosaïque</div>
-                <div className={styles.brandSub}>L’art de la mosaïque</div>
+                <div className={styles.brandSub}>L’art de la tesselle</div>
               </div>
             </div>
 
@@ -90,7 +90,7 @@ export default function Sidebar() {
             <img src="/icons/mosaic.svg" alt="" width="18" height="18" />
             <div>
               <div className={styles.brandTitleSmall}>Lelly Mosaïque</div>
-              <div className={styles.brandSubSmall}>L’art de la mosaïque</div>
+              <div className={styles.brandSubSmall}>L’art de la tesselle</div>
             </div>
           </div>
 

@@ -10,7 +10,7 @@ const crimson = Crimson_Text({ subsets: ["latin"], weight: ["400","600","700"], 
 
 export const metadata = {
   title: "Lelly Mosaïque",
-  description: "L'art de la mosaïque — créations et restaurations."
+  description: "L'art de la tesselle — créations et restaurations."
 };
 
 export default function RootLayout({ children }) {

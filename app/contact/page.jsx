@@ -1,3 +1,4 @@
+// app\contact\page.jsx
 'use client';
 import { Mail, MapPin } from "lucide-react";
 import styles from './page.module.scss';
@@ -65,7 +66,7 @@ export default function ContactPage(){
               </div>
 
               <div className={`${styles.highlight} card`}>
-                <h3>L’Art de la Mosaïque</h3>
+                <h3>L’Art de la tesselle</h3>
                 <p>Chaque œuvre est le fruit d’un travail minutieux et passionné. Nous perpétuons une tradition artistique vivante en y apportant notre touche originale.</p>
                 <hr />
                 <div className={styles.badgeRow}>

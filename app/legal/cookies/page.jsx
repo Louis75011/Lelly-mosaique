@@ -2,7 +2,9 @@ export const metadata = { title: 'Politique cookies — Lelly Mosaïque' };
 
 export default function Cookies() {
   return (
-    <main className="legal">
+        <section className="section legal-section">
+  <div className="container">
+
       <section className="hero">
         <div className="container">
           <div className="title">
@@ -33,6 +35,7 @@ export default function Cookies() {
           <p className="text-muted">Dernière mise à jour : 27/10/2025.</p>
         </div>
       </section>
-    </main>
+      </div>
+</section>
   );
 }

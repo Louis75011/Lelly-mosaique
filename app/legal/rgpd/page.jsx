@@ -2,7 +2,9 @@ export const metadata = { title: 'RGPD — Lelly Mosaïque' };
 
 export default function RGPD() {
   return (
-    <main className="legal">
+        <section className="section legal-section">
+  <div className="container">
+  
       <section className="hero">
         <div className="container">
           <div className="title">
@@ -48,6 +50,7 @@ export default function RGPD() {
         </div>
 
       </section>
-    </main>
+      </div>
+</section>
   );
 }

@@ -1,1 +1,21 @@
-.header{position:relative;height:40vh;margin-bottom:1rem}.banner{object-fit:cover;filter:brightness(.7)}.header h1{position:absolute;bottom:1.25rem;left:1rem;color:#fff;font-size:2.2rem}
+.header {
+    position: relative;
+    height: 40vh;
+    margin-bottom: 1rem
+}
+
+.banner {
+    object-fit: cover;
+    filter: brightness(.7)
+}
+
+.header h1 {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 1rem;
+    color: #fff;
+    font-size: 2.2rem
+}
+
+.player{ position:relative; aspect-ratio:16/9; border-radius:12px; overflow:hidden; background:#000; }
+.thumb{ object-fit:contain; }   /* pas de recadrage */

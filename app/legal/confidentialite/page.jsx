@@ -2,7 +2,8 @@ export const metadata = { title: 'Politique de confidentialité — Lelly Mosaï
 
 export default function Confidentialite() {
   return (
-    <main className="legal">
+    <section className="section legal-section">
+  <div className="container">
       <section className="hero">
         <div className="container">
           <div className="title">
@@ -60,6 +61,7 @@ export default function Confidentialite() {
         <button className="btn" data-open-cookie-panel>Gérer mes cookies</button>
         </div>
       </section>
-    </main>
+  </div>
+</section>
   );
 }

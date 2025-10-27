@@ -1,4 +1,4 @@
-// app/layout.jsx
+// path app/layout.jsx
 import "./globals.scss";
 import { Inter, Crimson_Text } from "next/font/google";
 import Sidebar from "./components/Sidebar";

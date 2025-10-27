@@ -7,6 +7,9 @@ pnpm-lock.yaml
 .pnpm-debug.log*
 package-lock.json
 
+.github
+.gitignore
+
 # Build / Output
 .next/
 out/

@@ -10,7 +10,12 @@ const crimson = Crimson_Text({ subsets: ["latin"], weight: ["400","600","700"], 
 
 export const metadata = {
   title: "Lelly Mosaïque",
-  description: "L'art de la tesselle — créations et restaurations."
+  description: "L'art de la tesselle — créations et restaurations.",
+  icons: {
+    icon: "/icons/mosaic_opus.svg", // favicon principal
+    shortcut: "/icons/mosaic_opus.svg",
+    apple: "/icons/mosaic_opus.svg",
+  },
 };
 
 export default function RootLayout({ children }) {

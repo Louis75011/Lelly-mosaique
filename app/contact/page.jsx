@@ -1,21 +1,84 @@
 'use client';
+import { Mail, MapPin } from "lucide-react";
 import styles from './page.module.scss';
-import Image from 'next/image';
 
 export default function ContactPage(){
   return (
-    <main className={styles.main}>
-      <h1>Contact</h1>
-      <p>Écrivez-nous pour vos projets de mosaïque.</p>
+    <>
+      <header className="hero">
+        <div className="container title" style={{color:'#fff'}}>
+          <Mail className="icon" aria-hidden width={36} height={36} />
+          <h1>Contact</h1>
+          <p className="subtitle">Entrons en conversation</p>
+        </div>
+      </header>
 
-      <form className={styles.form} onSubmit={(e)=>e.preventDefault()}>
-        <label>Nom<input type="text" name="name" required/></label>
-        <label>Email<input type="email" name="email" required/></label>
-        <label>Message<textarea name="message" rows={6} required/></label>
-        <button type="submit">
-          <Image src="/icons/mail.svg" alt="" width={20} height={20}/> Envoyer
-        </button>
-      </form>
-    </main>
+      <section className="section">
+        <div className="container">
+          <div className="grid-2">
+            <div className="card elevated">
+              <h2 className={styles.boxTitle}>Envoyez un courriel</h2>
+              <p className={styles.boxLead}>N’hésitez pas à nous contacter pour toute question ou projet de mosaïque.</p>
+
+              <form className={styles.form} onSubmit={(e)=>e.preventDefault()}>
+                <div className={styles.row}>
+                  <div>
+                    <label>Nom complet</label>
+                    <input name="name" placeholder="Votre nom" required />
+                  </div>
+                  <div>
+                    <label>Adresse email</label>
+                    <input type="email" name="email" placeholder="votre@email.com" required />
+                  </div>
+                </div>
+                <div>
+                  <label>Sujet</label>
+                  <input name="subject" placeholder="Objet de votre message" />
+                </div>
+                <div>
+                  <label>Message</label>
+                  <textarea name="message" rows={6} placeholder="Écrivez votre message ici..." required />
+                </div>
+                  <a href="mailto:charammac.lelly@gmail.com" className="btn">
+                <button type="submit" className="btn">
+  <Mail width={18} height={18} />
+  Envoyer le message
+                </button>
+</a>
+              </form>
+            </div>
+
+            <div className={styles.rightCol}>
+              <div className="card">
+                <h2 className={styles.boxTitle}>Coordonnées</h2>
+                <p className={styles.muted}>Pour toute demande d’information, n’hésitez pas à écrire. Réponse sous brefs délais.</p>
+                <ul className={styles.infoList}>
+                  <li>
+                    <span className={styles.ico}><Mail width={18} height={18} /></span>
+                    <span><strong>Email</strong><br/><a href="mailto:charammac.lelly@gmail.com">charammac.lelly@gmail.com</a></span>
+                  </li>
+                  <li>
+                    <span className={styles.ico}><MapPin width={18} height={18} /></span>
+                    <span><strong>Localisation</strong><br/>France</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className={`${styles.highlight} card`}>
+                <h3>L’Art de la Mosaïque</h3>
+                <p>Chaque œuvre est le fruit d’un travail minutieux et passionné. Nous perpétuons une tradition artistique vivante en y apportant notre touche originale.</p>
+                <hr />
+                <div className={styles.badgeRow}>
+                  <div className={styles.badge}>
+                    <strong>Depuis 1980</strong>
+                    <span>Plus de 40 ans d’expérience</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

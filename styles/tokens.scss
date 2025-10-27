@@ -1,10 +1,30 @@
-:root{
-  --clr-bg:#F3EBDD;
-  --clr-navy:#0E3553;
-  --clr-green:#2F6B56;
-  --clr-olive:#6C8A64;
-  --clr-brown:#8A5A44;
-  --clr-red:#B23A3A;
-  --radius:16px;
-  --shadow:0 14px 28px rgba(0,0,0,.08);
+:root {
+  /* Couleurs */
+  --sand-50:#fbf8f2;
+  --sand-100:#f4ecdf;
+  --sand-200:#e9dcc5;
+
+  --green-900:#0e3a2f;
+  --green-800:#17483b;
+  --green-700:#1e5a48;
+  --green-400:#4f8f78;
+
+  --ink-900:#1c1c1c;
+  --ink-700:#2f2f2f;
+  --ink-500:#515151;
+
+  --brand:#0b3d91; /* bleu marine discret pour liens */
+
+  /* UI */
+  --radius-2:12px;
+  --shadow-1:0 2px 8px rgba(0,0,0,.08);
+  --shadow-2:0 6px 20px rgba(0,0,0,.10);
+
+  /* Typo */
+  --font-sans: ui-sans-serif, system-ui, sans-serif;
+  --font-serif: Georgia, "Times New Roman", serif;
+
+  /* Layout */
+  --container: 1100px;
+  --gap: 24px;
 }

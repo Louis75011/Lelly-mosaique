@@ -1,3 +1,4 @@
+// app\components\Sidebar.jsx
 'use client';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -14,6 +15,7 @@ const NAV = [
 const LEGAL = [
   { href: '/legal/rgpd', label: 'RGPD' },
   { href: '/legal/cookies', label: 'Cookies' },
+  { href: '/legal/confidentialite', label: 'Confidentialité' },
 ];
 
 export default function Sidebar() {

@@ -1,5 +1,4 @@
-// app/legal/cookies/page.jsx
-export const metadata = { title: 'Cookies — Lelly Mosaïque' };
+export const metadata = { title: 'Politique cookies — Lelly Mosaïque' };
 
 export default function Cookies() {
   return (
@@ -7,34 +6,31 @@ export default function Cookies() {
       <section className="hero">
         <div className="container">
           <div className="title">
-            <h1>Cookies</h1>
-            <p className="subtitle">Informations sur les traceurs utilisés</p>
+            <h1>Politique cookies</h1>
+            <p className="subtitle">Traceurs et mesure d’audience</p>
           </div>
         </div>
       </section>
 
       <section className="section">
         <div className="container card">
-          <h2>Ce que nous utilisons</h2>
-          <ul>
-            <li>Cookie de consentement uniquement, mémorisant votre choix.</li>
-            <li>Aucune mesure d’audience par défaut. Aucun cookie publicitaire.</li>
-          </ul>
+          <h2>Essentiels</h2>
+          <p>Un cookie technique mémorise vos choix de consentement. Il est indispensable au panneau de préférences.</p>
 
-          <h2>Finalité</h2>
-          <p>Assurer le fonctionnement basique du site et respecter votre préférence de consentement.</p>
+          <h2>Mesure d’audience</h2>
+          <p>Nous privilégions des solutions sans cookie (mode « cookieless », exemptées de consentement par la CNIL).
+             Tout outil posant un cookie ne sera activé qu’avec votre accord (« Analyses »).</p>
 
-          <h2>Durées de conservation</h2>
-          <ul>
-            <li>Consentement: 6 à 12 mois selon le navigateur.</li>
-          </ul>
+          <h2>Marketing</h2>
+          <p>Aucun ciblage publicitaire par défaut. L’activation, si elle survient, restera optionnelle.</p>
 
-          <h2>Gérer vos cookies</h2>
-          <p>
-            Vous pouvez supprimer ou bloquer les cookies via les réglages de votre navigateur. Le site reste accessible.
-          </p>
+          <h2>Durées</h2>
+          <ul><li>Consentement : 6–12 mois selon navigateur.</li></ul>
 
-          <p className="text-muted">Dernière mise à jour: 27/10/2025.</p>
+          <h2>Gérer vos préférences</h2>
+          <button className="btn" data-open-cookie-panel>Gérer mes cookies</button>
+
+          <p className="text-muted">Dernière mise à jour : 27/10/2025.</p>
         </div>
       </section>
     </main>

@@ -173,7 +173,8 @@
 
   .menuContent {
     position: relative;
-    max-width: var(--container);
+    // max-width: var(--container);
+        width: 70%;
     margin: 0 auto;
     padding: 18px 16px calc(18px + var(--bottombar-h));
     background: var(--sand-100);

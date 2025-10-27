@@ -7,6 +7,7 @@
   --blue-700:#163a5a;
 
   --bottombar-h: 64px;
+  --mobile-bar-h:0px;
   --sidebar-w: 240px;
   --topbar-h: 64px; /* hauteur barre haute en tablette/mobile */
 }
@@ -31,7 +32,7 @@ a { color: var(--brand); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 /* Conteneur principal */
-.container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 20px; }
+.container { width: 100%; margin: 0 auto; padding: 0 20px; }
 
 /* Grilles */
 .grid-2 { display: grid; grid-template-columns: 1.1fr .9fr; gap: var(--gap); }
@@ -94,85 +95,66 @@ label { display: block; font-weight: 600; margin: 10px 0 6px; }
 /* Utilitaire icône inline */
 .icon { display:inline-block; vertical-align:middle; }
 
-// Grille responsive
-/* Shell layout global */
-.shell {
-  display: grid;
-  grid-template-columns: var(--sidebar-w) 1fr;
-  min-height: 100svh;
+// Grille responsive /* Shell layout global */
+.shell{ display:grid; grid-template-columns:var(--sidebar-w) 1fr; min-height:100svh; }
+.content{ min-width:0; }
+.sidebar{
+  background:#fff; border-right:1px solid #eee; padding:24px 16px;
+  position:sticky; top:0; align-self:start; height:100svh; overflow:auto; z-index:20;
 }
-.content { min-width: 0; } /* évite overflow des grilles internes */
+.site-footer{ border-top:1px solid #eee; background:#fff; padding:18px 0; margin-top:24px; }
+body > footer > div{ display:flex; justify-content:center; align-items:center; }
 
-/* Sidebar déjà stylée plus haut, on complète pour mobile */
-.sidebar {
-  background:#fff;
-  border-right:1px solid #eee;
-  padding:24px 16px;
-  position: sticky;
-  top: 0;
-  align-self: start;
-  height: 100svh;
-  overflow:auto;
-  z-index: 20;
-}
-
-/* Zone contenu */
-.content { min-width: 0; }
-
-/* Footer */
-.site-footer {
-  border-top:1px solid #eee;
-  background:#fff;
-  padding:18px 0;
-  margin-top: 24px;
-}
-
-/* Mobile: la sidebar passe en barre haute scrollable horizontalement */
-/* Barre haute en tablette/mobile : la sidebar occupe la 1re rangée, le contenu la 2e */
+/* ----- Mobile/Tablet : barre basse fixe + réservations d’espace ----- */
 @media (max-width:1024px){
-  .shell { grid-template-columns:1fr; grid-template-rows:0 1fr; }
+  :root{ --bottombar-h: 56px; } /* ajustez si votre .bottomBar est plus haute */
+
+  .shell{ grid-template-columns:1fr; grid-template-rows:0 1fr; }
   .sidebar{
     grid-column:1 / -1; grid-row:1; position:static; height:0;
     padding:0; border:0; background:transparent; overflow:visible;
   }
-  .content{ grid-row:2; padding-bottom: var(--bottombar-h); }
 
-  /* on masque tout le contenu interne de l’aside en mobile/tablette */
-  .sidebar :global(.wrap),
-  .sidebar :global(.nav),
-  .sidebar :global(.sep){ display:none !important; }
-}
-
-/* Mobile : menu extensible au-dessus du hero */
-@media (max-width: 640px){
-  // .sidebar {
-    /* le conteneur peut s’agrandir quand le menu est ouvert */
-  // }
-  /* Par défaut, menu replié */
-  .sidebar :global(.nav){
-    display:none;
-    flex-direction: column;
-    gap:8px;
-    overflow:visible;
+  /* .bottomBar devient fixe en bas, au-dessus du footer */
+  .sidebar :global(.bottomBar){
+    position:fixed; left:0; right:0; bottom:0;
+    height:var(--bottombar-h);
+    background:#fff; border-top:1px solid #eee;
+    z-index:30;
   }
-  /* Quand data-open="true" sur la sidebar, on déploie le menu */
-  .sidebar[data-open="true"] :global(.nav){ display:flex; }
+
+  /* Réserver l’espace pour que rien ne soit masqué */
+  .content{ grid-row:2; padding-bottom:var(--bottombar-h); }
+  .site-footer{ padding-bottom:calc(var(--bottombar-h) + 16px); }
 }
 
-/* Hero : ne jamais être masqué par la barre haute collante */
-.hero { 
-  background: linear-gradient(180deg, var(--green-700), var(--green-900));
-  color:#fff; padding:64px 0 90px;
-  scroll-margin-top: var(--topbar-h); /* ancrages sûrs en mobile/tablette */
+/* ----- Panneau cookies : bandeau au-dessus de la barre basse ----- */
+.cookie-banner{
+  position:fixed; left:12px; right:12px; bottom:12px; z-index:40;
+  background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:12px;
+  display:flex; gap:12px; align-items:center; box-shadow:0 8px 24px rgba(0,0,0,.08);
+  .actions{ margin-left:auto; display:flex; gap:8px; flex-wrap:wrap; }
 }
-.hero .title h1{ color:#fff; }
-.hero .title .subtitle{ color:rgba(255,255,255,.9); }
+@media (max-width:1024px){
+  .cookie-banner{ bottom: calc(12px + var(--bottombar-h)); }
+}
 
-/* Hero Contact : titres/icon en blanc garanti */
-.hero .title h1{ color:#fff; }
-.hero .title .subtitle{ color:rgba(255,255,255,.9); }
+/* Modal cookies (inchangé utile) */
+.cookie-modal{ position:fixed; inset:0; background:rgba(0,0,0,.35); display:flex; align-items:center; justify-content:center; z-index:50; }
+.cookie-card{ width:min(720px,92vw); background:#fff; border-radius:14px; padding:18px 20px; }
+.cookie-actions{ display:flex; gap:10px; justify-content:flex-end; margin-top:8px; }
 
-/* Icône <img> en blanc fallback (si vous gardez des <img>) */
-.img-white{ filter: invert(1) brightness(1.6); }
-
-
+/* Lignes du panneau cookies en grid fiable */
+.cookie-row{
+  display:grid;
+  grid-template-columns:20px 1fr;
+  align-items:start;
+  gap:12px;
+  padding:12px;
+  border:1px solid #e5e7eb;
+  border-radius:10px;
+  margin:10px 0;
+}
+.cookie-row > input[type="checkbox"]{ margin-top:4px; }
+.cookie-row > div{ min-width:0; }
+@media (max-width:560px){ .cookie-card{ max-height:80vh; overflow:auto; } }

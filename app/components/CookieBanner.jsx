@@ -1,2 +1,25 @@
-// app\components\CookieBanner.jsx
-'use client'; import { useEffect, useState } from 'react'; export default function CookieBanner() { const [show, setShow] = useState(false); useEffect(() => { setShow(!localStorage.getItem('io_cookie_ok')); }, []); if (!show) return null; return (<div style={{ position: 'fixed', bottom: 10, left: 230, right: 10, background: '#fff', border: '1px solid #eee', borderRadius: 12, padding: '1rem', boxShadow: '0 8px 24px rgba(0,0,0,.1)' }}>Ce site utilise uniquement un cookie technique pour mémoriser votre consentement.<button className='btn' style={{ marginLeft: 10 }} onClick={() => { localStorage.setItem('io_cookie_ok', '1'); setShow(false); }}>J’accepte</button><a className='btn secondary' style={{ marginLeft: 10 }} href='/legal/cookies'>En savoir plus</a></div>) }
+'use client';
+import { useEffect, useState } from 'react';
+import { hasChoice, setConsent } from './consent';
+
+export default function CookieBanner() {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => { setShow(!hasChoice()); }, []);
+  if (!show) return null;
+
+  return (
+    <div className="cookie-banner">
+      <span>Ce site utilise un cookie technique pour mémoriser vos préférences. Cookies non essentiels désactivés par défaut.</span>
+      <div className="actions">
+        <button className="btn" onClick={() => { setConsent({preferences:true, analyses:false, marketing:false}); setShow(false); }}>
+          J’accepte l’essentiel
+        </button>
+        <button className="btn secondary" data-open-cookie-panel onClick={() => setShow(false)}>Choisir</button>
+        <button className="btn ghost" onClick={() => { setConsent({preferences:false, analyses:false, marketing:false}); setShow(false); }}>
+          Tout refuser
+        </button>
+      </div>
+    </div>
+  );
+}

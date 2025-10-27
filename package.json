@@ -8,7 +8,7 @@
     "start": "next start -p 3000",
     "lint": "eslint .",
     "preview:cf": "npx @cloudflare/next-on-pages@1",
-    "build:cf": "npx @cloudflare/next-on-pages@1 --experimental-minify"
+    "build:cf": "npx @cloudflare/next-on-pages@1"
   },
   "dependencies": {
     "lucide-react": "^0.547.0",

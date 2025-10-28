@@ -1,10 +1,11 @@
+// app\legal\rgpd\page.jsx
 export const metadata = { title: 'RGPD — Lelly Mosaïque' };
 import { ShieldCheck } from "lucide-react";
 // 'use client';
 
 export default function RGPD() {
   return (
-    <section className="section legal-section">
+    <section className="section">
       <div className="container">
 
         <section className="hero">

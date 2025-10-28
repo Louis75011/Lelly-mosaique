@@ -1,5 +1,4 @@
 // app/api/contact/route.js
-
 export const runtime = 'edge';
 
 export async function POST() {

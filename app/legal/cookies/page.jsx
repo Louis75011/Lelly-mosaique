@@ -1,9 +1,10 @@
+// app\legal\cookies\page.jsx
 export const metadata = { title: 'Politique cookies — Lelly Mosaïque' };
 import { Cookie } from "lucide-react";
 
 export default function Cookies() {
   return (
-        <section className="section legal-section">
+        <section className="section">
   <div className="container">
 
       <section className="hero">

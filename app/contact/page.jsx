@@ -2,18 +2,23 @@
 'use client';
 import { Mail, MapPin } from "lucide-react";
 import styles from './page.module.scss';
-import { ShieldCheck } from "lucide-react";
 
 export default function ContactPage() {
   return (
     <>
-      <header className="hero">
-        <div className="container title" style={{ color: '#fff' }}>
-          <Mail className="icon" aria-hidden width={36} height={36} />
-          <h1>Contact</h1>
-          <p className="subtitle">Entrons en conversation</p>
+      <section className="section">
+        <div className="container">
+          <section className="hero">
+            <div className="container">
+              <div className="title">
+                <Mail className="icon" aria-hidden width={36} height={36} />
+                <h1>Contact</h1>
+                <p className="subtitle">Entrons en conversation</p>
+              </div>
+            </div>
+          </section>
         </div>
-      </header>
+      </section>
 
       <section className="section">
         <div className="container">

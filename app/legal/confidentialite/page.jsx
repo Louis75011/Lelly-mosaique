@@ -1,9 +1,10 @@
+// app\legal\confidentialite\page.jsx
 export const metadata = { title: 'Politique de confidentialité — Lelly Mosaïque' };
 import { Lock } from "lucide-react";
 
 export default function Confidentialite() {
   return (
-    <section className="section legal-section">
+    <section className="section">
   <div className="container">
       <section className="hero">
         <div className="container">

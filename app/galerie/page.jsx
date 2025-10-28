@@ -5,7 +5,7 @@ import { Images } from 'lucide-react';
 import styles from './page.module.scss';
 import albums from '../data/gallery.json';
 
-const CATS = ['Divers', 'Escalier', 'Mural', 'Plafond', 'Salle-de-bain', 'Sol', 'Table', 'Tableaux', 'Tombe'];
+const CATS = ['Divers','Escalier','Mural','Plafond','Salle-de-bain','Sol','Table','Tableaux','Tombe'];
 
 export default function GaleriePage() {
   const [cat, setCat] = useState('Mural');
@@ -13,14 +13,19 @@ export default function GaleriePage() {
 
   return (
     <>
-      {/* Hero identique à Contact */}
-      <header className="hero">
-        <div className="container title" style={{ color: '#fff' }}>
-          <Images className="icon" aria-hidden width={36} height={36} />
-          <h1>Galerie</h1>
-          <p className="subtitle">Albums photo & bibliothèque</p>
+      <section className="section">
+        <div className="container">
+          <section className="hero">
+            <div className="container">
+              <div className="title">
+                <Images className="icon" aria-hidden width={36} height={36} />
+                <h1>Galerie</h1>
+                <p className="subtitle">Albums photo & bibliothèque</p>
+              </div>
+            </div>
+          </section>
         </div>
-      </header>
+      </section>
 
       <section className="section legal-section">
         <div className="container">

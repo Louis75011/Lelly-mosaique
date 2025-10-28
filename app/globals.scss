@@ -36,12 +36,13 @@ h1,
 h2,
 h3 {
   font-family: var(--font-serif);
-  color: var(--ink-900);
+  color: var(--blue-800);
   margin: 0 0 .75rem;
 }
 
 h1 {
-  font-size: clamp(28px, 5vw, 44px);color: #fff;
+  font-size: clamp(28px, 5vw, 44px);
+  color: #fff;
 }
 
 h2 {
@@ -136,6 +137,15 @@ label {
   background: linear-gradient(180deg, var(--green-700), var(--green-900));
   color: #fff;
   padding: 64px 0 90px;
+  width: 97.2%;
+  margin: 0 auto;
+}
+
+.legal-section section.hero {
+  width: 100%
+}
+.art-section header {
+  width: 100%
 }
 
 .hero .title {
@@ -160,7 +170,7 @@ label {
 /* Section fond sable clair sous hero */
 .section {
   background: var(--sand-100);
-  padding: 4px 0 8px;
+  // padding: 4px 0 8px;
 }
 
 /* Sidebar (si votre layout en a une) */

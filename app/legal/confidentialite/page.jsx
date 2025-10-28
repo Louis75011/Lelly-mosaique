@@ -1,4 +1,5 @@
 export const metadata = { title: 'Politique de confidentialité — Lelly Mosaïque' };
+import { Lock } from "lucide-react";
 
 export default function Confidentialite() {
   return (
@@ -7,6 +8,7 @@ export default function Confidentialite() {
       <section className="hero">
         <div className="container">
           <div className="title">
+             <Lock className="icon" aria-hidden width={36} height={36} />
             <h1>Politique de confidentialité</h1>
             <p className="subtitle">Protection des données des visiteurs et contacts</p>
           </div>

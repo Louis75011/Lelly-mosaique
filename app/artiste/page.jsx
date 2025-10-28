@@ -8,7 +8,7 @@ export const metadata = { title: "L’Artiste — Lelly Mosaïque" };
 
 export default function PageArtiste() {
   return (
-    <section className="section legal-section">
+    <section className="section art-section">
       <div className="container">
         <main>
           {/* Bandeau visuel */}
@@ -20,33 +20,39 @@ export default function PageArtiste() {
           {/* Bloc biographie */}
           <section className="section">
             <article className="card legal-card">
+
               <h2>Parcours</h2>
               <p>
-                Nelly Charamnac, mosaïste depuis 1980, pratique un art de patience :
-                tesselles, matières naturelles, jeux de lumière et sens du mouvement structurent ses œuvres.
+                Initiée à la mosaïque dès 1980, Nelly Charamnac fait de la patience son alliée, composant des œuvres où l’agencement minutieux des tesselles révèle une recherche constante des matériaux authentiques, de la lumière, et du mouvement. Son univers artistique se distingue par la valorisation du rythme des motifs et l’équilibre subtil des couleurs, conférant à chaque création une énergie poétique unique.
               </p>
 
               <h3>Enseignement</h3>
               <p>
-                Maître mosaïste formée à l’ADAC, elle a transmis son savoir-faire à Paris
-                (mosaïque romaine, byzantine et contemporaine), dans un esprit d’exigence
-                technique et de liberté créative.
+                Diplômée de l’ADAC, Nelly s’appuie sur une expertise technique solide pour animer cours et ateliers de mosaïque à Paris. Elle privilégie l’exigence et l’indépendance créative, des valeurs transmises avec passion à des apprenants venus autant des milieux amateurs que professionnels. Sa pédagogie, ouverte aux traditions — romaines, byzantines — ainsi qu’aux approches contemporaines, favorise l’exploration et l’innovation.
               </p>
 
               <h3>Repères professionnels</h3>
               <ul className={styles.facts}>
                 <li>
-                  <strong>Entreprise individuelle</strong> : CHARAMNAC Nelly — APE 8552Z « enseignement culturel ».
-                  Immatriculation le <time dateTime="2011-06-16">16/06/2011</time>, radiation le
-                  <time dateTime="2020-05-04"> 04/05/2020</time>.{" "}
+                  <strong>Activité de mosaïste indépendante</strong> : Immatriculée en tant qu’artisane culturelle (APE 8552Z) du <time dateTime="2011-06-16">16/06/2011</time> au <time dateTime="2020-05-04">04/05/2020</time>.
                   <Link href="https://entreprises.lefigaro.fr/madame-nelly-lelly-75/entreprise-533017778" target="_blank" rel="noopener">
                     Fiche publique
                   </Link>.
                 </li>
                 <li>
-                  <strong>Transmission</strong> : des élèves et collègues citent sa formation ADAC et ses cours de mosaïque à Paris.
+                  <strong>Transmission reconnue</strong> : L’impact de son enseignement se mesure à travers des parcours d’anciens élèves, devenus artistes ou enseignants à leur tour, et les témoignages de professionnels mentionnant sa formation et ses stages à Paris.
                 </li>
               </ul>
+
+              <h3>Rayonnement et engagement</h3>
+              <p>
+                Depuis plus de trois décennies, Nelly contribue activement au rayonnement de la mosaïque en France. Son atelier est mentionné dans des annuaires spécialisés et elle figure dans diverses biographies d’artistes, reflet d’une reconnaissance pérenne dans le champ des arts décoratifs. Son expertise est saluée lors de festivals, rencontres mosaïques et collaborations, confirmant son rôle dans la transmission et le renouveau du métier.
+              </p>
+
+              <h3>Expositions et collaborations</h3>
+              <p>
+                Forte de nombreuses expositions et projets collectifs, elle partage régulièrement ses expériences lors d’événements dédiés, riches en échanges et en découvertes. Cette implication favorise la vitalité du secteur mosaïste et atteste d'un engagement continu en faveur de l’art et de sa diffusion.
+              </p>
             </article>
           </section>
 
@@ -85,16 +91,16 @@ export default function PageArtiste() {
           </section>
 
           {/* Encadré synthèse */}
-          <section className="section">
-            <article className="card legal-card">
-              <h2>À retenir</h2>
-              <ul className={styles.bullets}>
-                <li>Alliance du savoir-faire traditionnel et d’une recherche plastique exigeante.</li>
-                <li>Transmission active : cours et stages, rayonnement durable à Paris.</li>
-                <li>Parcours professionnel référencé et consultable dans les registres publics.</li>
-              </ul>
-            </article>
-          </section>
+          <section className={`section ${styles.retention}`}>
+  <article className="container">
+    <h2>À retenir</h2>
+    <ul className={styles.bullets}>
+      <li>Alliance du savoir-faire traditionnel et d’une recherche plastique exigeante.</li>
+      <li>Transmission active : cours et stages, rayonnement durable à Paris.</li>
+      <li>Parcours professionnel référencé et consultable dans les registres publics.</li>
+    </ul>
+  </article>
+</section>
         </main>
       </div>
     </section>

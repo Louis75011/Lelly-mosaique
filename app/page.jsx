@@ -34,6 +34,20 @@ export default function HomePage() {
             </div>
           </section>
 
+          {/* const NAV = [
+  { href: '/', label: 'Accueil' },
+  { href: '/artiste', label: 'Présentation' },
+  { href: '/galerie', label: 'Galerie' },
+  { href: '/contact', label: 'Contact' },
+];
+
+const LEGAL = [
+  { href: '/legal/rgpd', label: 'RGPD' },
+  { href: '/legal/cookies', label: 'Cookies' },
+  { href: '/legal/confidentialite', label: 'Confidentialité' },
+]; */}
+
+
           <section className={`section ${styles.quote}`}>
             <div className="container">
               <blockquote>« {q.text} »<br /><span className="text-muted">— {q.author}</span></blockquote>

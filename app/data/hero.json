@@ -5,7 +5,7 @@
         "cover": "/images/hero/h01img4637.jpg",
         "album": {
             "slug": "piscine-limousine",
-            "category": "Sol, Homme"
+            "category": "Sol"
         }
     },
     {
@@ -14,7 +14,7 @@
         "cover": "/images/hero/h02img434.jpg",
         "album": {
             "slug": "piscine-limousine",
-            "category": "Sol, Homme"
+            "category": "Sol"
         }
     },
     {
@@ -23,7 +23,7 @@
         "cover": "/images/hero/h03img4648.jpg",
         "album": {
             "slug": "piscine-limousine",
-            "category": "Sol, Homme"
+            "category": "Sol"
         }
     },
     {
@@ -32,7 +32,7 @@
         "cover": "/images/hero/h04img5622.jpg",
         "album": {
             "slug": "piscine-limousine",
-            "category": "Sol, Homme"
+            "category": "Sol"
         }
     },
     {
@@ -41,7 +41,7 @@
         "cover": "/images/hero/h05img417.jpg",
         "album": {
             "slug": "piscine-limousine",
-            "category": "Sol, Homme"
+            "category": "Sol"
         }
     },
     {
@@ -50,7 +50,7 @@
         "cover": "/images/hero/h06img0000.jpg",
         "album": {
             "slug": "piscine-limousine",
-            "category": "Sol, Homme"
+            "category": "Sol"
         }
     },
     {
@@ -59,7 +59,7 @@
         "cover": "/images/hero/h07img0000.jpg",
         "album": {
             "slug": "piscine-limousine",
-            "category": "Sol, Homme"
+            "category": "Sol"
         }
     },
     {
@@ -68,16 +68,7 @@
         "cover": "/images/hero/a01img00640.jpg",
         "album": {
             "slug": "faune-aquatique",
-            "category": "Sol, Animaux"
-        }
-    },
-    {
-        "id": "faune-aquatique-detail-2",
-        "title": "Faune aquatique — Détail 2",
-        "cover": "/images/hero/a01img006402.jpg",
-        "album": {
-            "slug": "faune-aquatique",
-            "category": "Sol, Animaux"
+            "category": "Sol"
         }
     },
     {
@@ -86,7 +77,7 @@
         "cover": "/images/hero/a02img4562.jpg",
         "album": {
             "slug": "faune-aquatique",
-            "category": "Sol, Animaux"
+            "category": "Sol"
         }
     },
     {
@@ -94,8 +85,8 @@
         "title": "Oiseau en vol",
         "cover": "/images/hero/a03img4558.jpg",
         "album": {
-            "slug": "faune-céleste",
-            "category": "Sol, Animaux"
+            "slug": "faune-celeste",
+            "category": "Sol"
         }
     },
     {
@@ -104,7 +95,7 @@
         "cover": "/images/hero/a04img4652.jpg",
         "album": {
             "slug": "faune-forestiere",
-            "category": "Sol, Animaux"
+            "category": "Sol"
         }
     },
     {
@@ -113,7 +104,7 @@
         "cover": "/images/hero/a05img4557.jpg",
         "album": {
             "slug": "faune-noble",
-            "category": "Sol, Animaux"
+            "category": "Sol"
         }
     },
     {
@@ -122,7 +113,7 @@
         "cover": "/images/hero/a06-dsc02813.jpg",
         "album": {
             "slug": "faune-exotique",
-            "category": "Sol, Animaux"
+            "category": "Sol"
         }
     },
     {
@@ -131,7 +122,7 @@
         "cover": "/images/hero/a07-dsc02814.jpg",
         "album": {
             "slug": "faune-aquatique",
-            "category": "Sol, Animaux"
+            "category": "Sol"
         }
     },
     {
@@ -140,7 +131,7 @@
         "cover": "/images/hero/a08-dsc02822.jpg",
         "album": {
             "slug": "faune-aquatique",
-            "category": "Sol, Animaux"
+            "category": "Sol"
         }
     },
     {
@@ -149,7 +140,7 @@
         "cover": "/images/hero/a09-dsc02830.jpg",
         "album": {
             "slug": "faune-aquatique",
-            "category": "Sol, Animaux"
+            "category": "Sol"
         }
     },
     {
@@ -158,7 +149,7 @@
         "cover": "/images/hero/a10-dsc02841.jpg",
         "album": {
             "slug": "faune-symbolique",
-            "category": "Sol, Animaux"
+            "category": "Sol"
         }
     },
     {
@@ -166,8 +157,8 @@
         "title": "Aigle en chasse",
         "cover": "/images/hero/a11-418.jpg",
         "album": {
-            "slug": "faune-celeste",
-            "category": "Sol, Animaux"
+            "slug": "faune-celeste-v0",
+            "category": "Sol"
         }
     },
     {
@@ -176,7 +167,7 @@
         "cover": "/images/hero/a12img0511.jpg",
         "album": {
             "slug": "faune-noble",
-            "category": "Sol, Animaux"
+            "category": "Sol"
         }
     },
     {
@@ -185,7 +176,7 @@
         "cover": "/images/hero/v01img4575.jpg",
         "album": {
             "slug": "vegetaux",
-            "category": "Sol, Végétaux"
+            "category": "Sol"
         }
     },
     {
@@ -194,7 +185,7 @@
         "cover": "/images/hero/v02img4574.jpg",
         "album": {
             "slug": "vegetaux",
-            "category": "Sol, Végétaux"
+            "category": "Sol"
         }
     },
     {
@@ -203,7 +194,7 @@
         "cover": "/images/hero/v03img0504.jpg",
         "album": {
             "slug": "vegetaux",
-            "category": "Sol, Végétaux"
+            "category": "Sol"
         }
     },
     {
@@ -212,7 +203,7 @@
         "cover": "/images/hero/v04img0505.jpg",
         "album": {
             "slug": "vegetaux",
-            "category": "Sol, Végétaux"
+            "category": "Sol"
         }
     },
     {
@@ -221,7 +212,7 @@
         "cover": "/images/hero/v05img4572.jpg",
         "album": {
             "slug": "vegetaux",
-            "category": "Sol, Végétaux"
+            "category": "Sol"
         }
     }
 ]

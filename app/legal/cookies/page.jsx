@@ -1,4 +1,5 @@
 export const metadata = { title: 'Politique cookies — Lelly Mosaïque' };
+import { Cookie } from "lucide-react";
 
 export default function Cookies() {
   return (
@@ -8,6 +9,7 @@ export default function Cookies() {
       <section className="hero">
         <div className="container">
           <div className="title">
+             <Cookie className="icon" aria-hidden width={36} height={36} />
             <h1>Politique cookies</h1>
             <p className="subtitle">Traceurs et mesure d’audience</p>
           </div>

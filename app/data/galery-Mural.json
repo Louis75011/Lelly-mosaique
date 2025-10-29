@@ -2,7 +2,7 @@
     {
         "//album": "n°300",
         "id": 3000,
-        "image": "/public/images/gallery/Divers/MURAL-COQ-RAYMONDE-BEAUGARD-9003-RUE-DE-LA-FORTAISE-A-PLOUFRAGAN-2021-BRETAGNE/IMG_2816.jpg",
+          "image": "/images/gallery/Mural/COQ-RAYMONDE-BEAUGARD-9003-RUE-DE-LA-FORTAISE-A-PLOUFRAGAN-2021-BRETAGNE/IMG_2816.jpg",
         "title": "Coq dans l'entrée d'une maison rue de la Fortaise à Ploufragan, effectué en 2021 (Bretagne)",
         "description": "mosaique, lelly, france, bretagne, coq, mural, entree",
         "support": "Mur",
@@ -10,7 +10,7 @@
     },
     {
         "id": 3001,
-        "image": "/public/images/gallery/Divers/MURAL-COQ-RAYMONDE-BEAUGARD-9003-RUE-DE-LA-FORTAISE-A-PLOUFRAGAN-2021-BRETAGNE/IMG_2817.jpg",
+        "image": "/images/gallery/Mural/COQ-RAYMONDE-BEAUGARD-9003-RUE-DE-LA-FORTAISE-A-PLOUFRAGAN-2021-BRETAGNE/IMG_2817.jpg",
         "title": "",
         "description": "mosaique, lelly, france, bretagne, coq, mural, entree",
         "support": "Mur",
@@ -18,7 +18,7 @@
     },
     {
         "id": 3002,
-        "image": "/public/images/gallery/Divers/MURAL-COQ-RAYMONDE-BEAUGARD-9003-RUE-DE-LA-FORTAISE-A-PLOUFRAGAN-2021-BRETAGNE/IMG_2818.jpg",
+        "image": "/images/gallery/Mural/COQ-RAYMONDE-BEAUGARD-9003-RUE-DE-LA-FORTAISE-A-PLOUFRAGAN-2021-BRETAGNE/IMG_2818.jpg",
         "title": "",
         "description": "mosaique, lelly, france, bretagne, coq, mural, entree",
         "support": "Mur",
@@ -26,7 +26,7 @@
     },
     {
         "id": 3003,
-        "image": "/public/images/gallery/Divers/MURAL-COQ-RAYMONDE-BEAUGARD-9003-RUE-DE-LA-FORTAISE-A-PLOUFRAGAN-2021-BRETAGNE/IMG_2819.jpg",
+        "image": "/images/gallery/Mural/COQ-RAYMONDE-BEAUGARD-9003-RUE-DE-LA-FORTAISE-A-PLOUFRAGAN-2021-BRETAGNE/IMG_2819.jpg",
         "title": "",
         "description": "mosaique, lelly, france, bretagne, coq, mural, entree",
         "support": "Mur",
@@ -34,7 +34,7 @@
     },
     {
         "id": 3004,
-        "image": "/public/images/gallery/Divers/MURAL-COQ-RAYMONDE-BEAUGARD-9003-RUE-DE-LA-FORTAISE-A-PLOUFRAGAN-2021-BRETAGNE/IMG_2820.jpg",
+        "image": "/images/gallery/Mural/COQ-RAYMONDE-BEAUGARD-9003-RUE-DE-LA-FORTAISE-A-PLOUFRAGAN-2021-BRETAGNE/IMG_2820.jpg",
         "title": "",
         "description": "mosaique, lelly, france, bretagne, coq, mural, entree",
         "support": "Mur",
@@ -42,7 +42,7 @@
     },
     {
         "id": 3005,
-        "image": "/public/images/gallery/Divers/MURAL-COQ-RAYMONDE-BEAUGARD-9003-RUE-DE-LA-FORTAISE-A-PLOUFRAGAN-2021-BRETAGNE/IMG_2821.jpg",
+        "image": "/images/gallery/Mural/COQ-RAYMONDE-BEAUGARD-9003-RUE-DE-LA-FORTAISE-A-PLOUFRAGAN-2021-BRETAGNE/IMG_2821.jpg",
         "title": "",
         "description": "mosaique, lelly, france, bretagne, coq, mural, entree",
         "support": "Mur",
@@ -51,7 +51,7 @@
     {
         "//album": "n°301",
         "id": 3030,
-        "image": "/public/images/gallery/Divers/MURAL-PONCTUATIONS-OISEAU-PARIS-LEON-FROT/34-DSC00748.jpg",
+        "image": "/images/gallery/Mural/PONCTUATIONS-OISEAU-PARIS-LEON-FROT/34-DSC00748.jpg",
         "title": "Oiseau dans un sous-sol de maison rue Léon Frot (Paris)",
         "description": "mosaique, lelly, france, parisien, oiseau, mural, cave",
         "support": "Mur",
@@ -59,7 +59,7 @@
     },
     {
         "id": 3031,
-        "image": "/public/images/gallery/Divers/MURAL-PONCTUATIONS-OISEAU-PARIS-LEON-FROT/35-DSC00749.jpg",
+        "image": "/images/gallery/Mural/PONCTUATIONS-OISEAU-PARIS-LEON-FROT/35-DSC00749.jpg",
         "title": "",
         "description": "mosaique, lelly, france, parisien, oiseau, mural, cave",
         "support": "Mur",
@@ -67,7 +67,7 @@
     },
     {
         "id": 3032,
-        "image": "/public/images/gallery/Divers/MURAL-PONCTUATIONS-OISEAU-PARIS-LEON-FROT/36-DSC00750.jpg",
+        "image": "/images/gallery/Mural/PONCTUATIONS-OISEAU-PARIS-LEON-FROT/36-DSC00750.jpg",
         "title": "",
         "description": "mosaique, lelly, france, parisien, oiseau, mural, cave",
         "support": "Mur",
@@ -75,7 +75,7 @@
     },
     {
         "id": 3033,
-        "image": "/public/images/gallery/Divers/MURAL-PONCTUATIONS-OISEAU-PARIS-LEON-FROT/37-DSC00744.jpg",
+        "image": "/images/gallery/Mural/PONCTUATIONS-OISEAU-PARIS-LEON-FROT/37-DSC00744.jpg",
         "title": "",
         "description": "mosaique, lelly, france, parisien, oiseau, mural, cave",
         "support": "Mur",
@@ -84,7 +84,7 @@
     {
         "//album": "n°302",
         "id": 3060,
-        "image": "/public/images/gallery/Divers/MURAL-PONCTUATION-MAISON-63-RUE-LEON-FROT/46-i805.jpg",
+        "image": "/images/gallery/Mural/PONCTUATION-MAISON-63-RUE-LEON-FROT/46-i805.jpg",
         "title": "Oiseau incrusté dans le mur d'une maison rue Léon Frot (Paris)",
         "description": "mosaique, lelly, france, parisien, oiseau, mural, cave",
         "support": "Mur",
@@ -93,7 +93,7 @@
     {
         "//album": "n°302",
         "id": 3091,
-        "image": "/public/images/gallery/Divers/MURAL-15-RUE-DE-BELFORT-SUR-COUR-COMMANDE-CHANTIR-MICHEL-PATIENT-PARIS-11EME-DECORS-FLORAL/19-i670.jpg",
+        "image": "/images/gallery/Mural/15-RUE-DE-BELFORT-SUR-COUR-COMMANDE-CHANTIR-MICHEL-PATIENT-PARIS-11EME-DECORS-FLORAL/19-i670.jpg",
         "title": "Décors floraux chez M. Patient (Paris)",
         "description": "mosaique, lelly, france, paris, floral, mural, incrustation",
         "support": "Mur",
@@ -101,7 +101,7 @@
     },
     {
         "id": 3092,
-        "image": "/public/images/gallery/Divers/MURAL-15-RUE-DE-BELFORT-SUR-COUR-COMMANDE-CHANTIR-MICHEL-PATIENT-PARIS-11EME-DECORS-FLORAL/20-i671.jpg",
+        "image": "/images/gallery/Mural/15-RUE-DE-BELFORT-SUR-COUR-COMMANDE-CHANTIR-MICHEL-PATIENT-PARIS-11EME-DECORS-FLORAL/20-i671.jpg",
         "title": "",
         "description": "mosaique, lelly, france, paris, floral, mural, incrustation",
         "support": "Mur",
@@ -109,7 +109,7 @@
     },
     {
         "id": 3093,
-        "image": "/public/images/gallery/Divers/MURAL-15-RUE-DE-BELFORT-SUR-COUR-COMMANDE-CHANTIR-MICHEL-PATIENT-PARIS-11EME-DECORS-FLORAL/22-i673.jpg",
+        "image": "/images/gallery/Mural/15-RUE-DE-BELFORT-SUR-COUR-COMMANDE-CHANTIR-MICHEL-PATIENT-PARIS-11EME-DECORS-FLORAL/22-i673.jpg",
         "title": "",
         "description": "mosaique, lelly, france, paris, floral, mural, incrustation",
         "support": "Mur",
@@ -117,7 +117,7 @@
     },
     {
         "id": 3094,
-        "image": "/public/images/gallery/Divers/MURAL-15-RUE-DE-BELFORT-SUR-COUR-COMMANDE-CHANTIR-MICHEL-PATIENT-PARIS-11EME-DECORS-FLORAL/23-i674.jpg",
+        "image": "/images/gallery/Mural/15-RUE-DE-BELFORT-SUR-COUR-COMMANDE-CHANTIR-MICHEL-PATIENT-PARIS-11EME-DECORS-FLORAL/23-i674.jpg",
         "title": "",
         "description": "mosaique, lelly, france, paris, floral, mural, incrustation",
         "support": "Mur",
@@ -125,7 +125,7 @@
     },
     {
         "id": 3095,
-        "image": "/public/images/gallery/Divers/MURAL-15-RUE-DE-BELFORT-SUR-COUR-COMMANDE-CHANTIR-MICHEL-PATIENT-PARIS-11EME-DECORS-FLORAL/24-i675.jpg",
+        "image": "/images/gallery/Mural/15-RUE-DE-BELFORT-SUR-COUR-COMMANDE-CHANTIR-MICHEL-PATIENT-PARIS-11EME-DECORS-FLORAL/24-i675.jpg",
         "title": "",
         "description": "mosaique, lelly, france, paris, floral, mural, incrustation",
         "support": "Mur",
@@ -133,7 +133,7 @@
     },
     {
         "id": 3096,
-        "image": "/public/images/gallery/Divers/MURAL-15-RUE-DE-BELFORT-SUR-COUR-COMMANDE-CHANTIR-MICHEL-PATIENT-PARIS-11EME-DECORS-FLORAL/25-i676.jpg",
+        "image": "/images/gallery/Mural/15-RUE-DE-BELFORT-SUR-COUR-COMMANDE-CHANTIR-MICHEL-PATIENT-PARIS-11EME-DECORS-FLORAL/25-i676.jpg",
         "title": "",
         "description": "mosaique, lelly, france, paris, floral, mural, incrustation",
         "support": "Mur",
@@ -142,7 +142,7 @@
     {
         "//album": "n°303",
         "id": 3120,
-        "image": "/public/images/gallery/Divers/MURAL-PONCTUATION-FLORALE/41-DSC00755.jpg",
+        "image": "/images/gallery/Mural/PONCTUATION-FLORALE/41-DSC00755.jpg",
         "title": "Ponctuations florales (Paris)",
         "description": "mosaique, lelly, france, paris, floral, mural, ponctuation",
         "support": "Mur",
@@ -150,7 +150,7 @@
     },
     {
         "id": 3121,
-        "image": "/public/images/gallery/Divers/MURAL-PONCTUATION-FLORALE/42-DSC00756.jpg",
+        "image": "/images/gallery/Mural/PONCTUATION-FLORALE/42-DSC00756.jpg",
         "title": "",
         "description": "mosaique, lelly, france, paris, floral, mural, ponctuation",
         "support": "Mur",
@@ -158,7 +158,7 @@
     },
     {
         "id": 3122,
-        "image": "/public/images/gallery/Divers/MURAL-PONCTUATION-FLORALE/43-DSC00757.jpg",
+        "image": "/images/gallery/Mural/PONCTUATION-FLORALE/43-DSC00757.jpg",
         "title": "",
         "description": "mosaique, lelly, france, paris, floral, mural, ponctuation",
         "support": "Mur",
@@ -166,7 +166,7 @@
     },
     {
         "id": 3123,
-        "image": "/public/images/gallery/Divers/MURAL-PONCTUATION-FLORALE/44-DSC00758.jpg",
+        "image": "/images/gallery/Mural/PONCTUATION-FLORALE/44-DSC00758.jpg",
         "title": "",
         "description": "mosaique, lelly, france, paris, floral, mural, ponctuation",
         "support": "Mur",
@@ -174,7 +174,7 @@
     },
     {
         "id": 3124,
-        "image": "/public/images/gallery/Divers/MURAL-PONCTUATION-FLORALE/45-DSC00759.jpg",
+        "image": "/images/gallery/Mural/PONCTUATION-FLORALE/45-DSC00759.jpg",
         "title": "",
         "description": "mosaique, lelly, france, paris, floral, mural, ponctuation",
         "support": "Mur",
@@ -182,7 +182,7 @@
     },
     {
         "id": 3125,
-        "image": "/public/images/gallery/Divers/MURAL-PONCTUATION-FLORALE/46-DSC00760.jpg",
+        "image": "/images/gallery/Mural/PONCTUATION-FLORALE/46-DSC00760.jpg",
         "title": "",
         "description": "mosaique, lelly, france, paris, floral, mural, ponctuation",
         "support": "Mur",

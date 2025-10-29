@@ -262,71 +262,6 @@
         "region": "Paris-IDF"
     },
     {
-        "//album": "n°611",
-        "id": 6360,
-        "image": "/images/gallery/Sol/CHAMPAGNAC-LA-RIVIERE-DANS LE-LIMOUSIN-SALLE-DE-BAIN-1996-ENVIRON-3M2/1-0275-i830.jpg",
-        "title": "À la suite de ces pavements, en 1996, mes parents me demandent à leur tour d’habiller le plancher de la salle de bain de la maison familiale, en Haute Vienne. Pour variations nouvelles, je songe aux branchages dans un travail fin et complexe, très plein, à l’image de cette maison ancienne. Des années plus tard, la salle de bain sera modernisée avec le remplacement de la baignoire et du bidet par une douche. Amputée d’une petite partie, le sol survivra.",
-        "description": "mosaique, lelly, france, limousin, grand-parents, dessin, fleurs, decoration, sol",
-        "support": "sol",
-        "region": "Limousin"
-    },
-    {
-        "id": 6361,
-        "image": "/images/gallery/Sol/CHAMPAGNAC-LA-RIVIERE-DANS LE-LIMOUSIN-SALLE-DE-BAIN-1996-ENVIRON-3M2/2-0275-i831.jpg",
-        "title": "",
-        "description": "mosaique, lelly, france, paris, voisin, dessin, tourbillon, ombres, blanc",
-        "support": "sol",
-        "region": "Limousin"
-    },
-    {
-        "id": 6362,
-        "image": "/images/gallery/Sol/CHAMPAGNAC-LA-RIVIERE-DANS LE-LIMOUSIN-SALLE-DE-BAIN-1996-ENVIRON-3M2/3-0275-i832.jpg",
-        "title": "",
-        "description": "mosaique, lelly, france, paris, voisin, dessin, tourbillon, ombres, blanc",
-        "support": "sol",
-        "region": "Limousin"
-    },
-    {
-        "id": 6363,
-        "image": "/images/gallery/Sol/CHAMPAGNAC-LA-RIVIERE-DANS LE-LIMOUSIN-SALLE-DE-BAIN-1996-ENVIRON-3M2/4-0275-i833.jpg",
-        "title": "",
-        "description": "mosaique, lelly, france, paris, voisin, dessin, tourbillon, ombres, blanc",
-        "support": "sol",
-        "region": "Limousin"
-    },
-    {
-        "id": 6364,
-        "image": "/images/gallery/Sol/CHAMPAGNAC-LA-RIVIERE-DANS LE-LIMOUSIN-SALLE-DE-BAIN-1996-ENVIRON-3M2/5-0275-i834.jpg",
-        "title": "",
-        "description": "mosaique, lelly, france, paris, voisin, dessin, tourbillon, ombres, blanc",
-        "support": "sol",
-        "region": "Limousin"
-    },
-    {
-        "id": 6365,
-        "image": "/images/gallery/Sol/CHAMPAGNAC-LA-RIVIERE-DANS LE-LIMOUSIN-SALLE-DE-BAIN-1996-ENVIRON-3M2/6-0275-i835.jpg",
-        "title": "",
-        "description": "mosaique, lelly, france, paris, voisin, dessin, tourbillon, ombres, blanc",
-        "support": "sol",
-        "region": "Limousin"
-    },
-    {
-        "id": 6366,
-        "image": "/images/gallery/Sol/CHAMPAGNAC-LA-RIVIERE-DANS LE-LIMOUSIN-SALLE-DE-BAIN-1996-ENVIRON-3M2/7-0275-i836.jpg",
-        "title": "",
-        "description": "mosaique, lelly, france, paris, voisin, dessin, tourbillon, ombres, blanc",
-        "support": "sol",
-        "region": "Limousin"
-    },
-    {
-        "id": 6367,
-        "image": "/images/gallery/Sol/CHAMPAGNAC-LA-RIVIERE-DANS LE-LIMOUSIN-SALLE-DE-BAIN-1996-ENVIRON-3M2/8-0275-i837.jpg",
-        "title": "",
-        "description": "mosaique, lelly, france, paris, voisin, dessin, tourbillon, ombres, blanc",
-        "support": "sol",
-        "region": "Limousin"
-    },
-    {
         "//album": "n°600",
         "id": 6000,
         "image": "/images/gallery/Sol/CHAMBRE-PARENTS-PARIS-LEON-FROT-10m2/10-4-DSC05770.jpg",
@@ -370,7 +305,7 @@
     {
         "//album": "n°603",
         "id": 6090,
-        "image": "/images/gallery/Sol/BALCON-POSE-SAINT-GRATIEN-95, REALISE-ENTRE-2011-2012-INTITULE-JALOUSIES-ET-INSPIRE-PAR-LA-VEGETATION-DE-LA-VILLE-DE-NICE-ET-SES-OISEAUX-DU-PARADIS/02-DSCN4020.jpg",
+        "image": "/images/gallery/Sol/BALCON-POSE-SAINT-GRATIEN-95-REALISE-ENTRE-2011-2012-INTITULE-JALOUSIES-ET-INSPIRE-PAR-LA-VEGETATION-DE-LA-VILLE-DE-NICE-ET-SES-OISEAUX-DU-PARADIS/02-DSCN4020.jpg",
         "title": "Sol de balcon de 3,10m², à Saint-Gratien dans le 95, au 2 Allée de la Musique, réalisé entre 2011 et 2013. Intitulé 'Jalousies', il a été inspiré par la végétation de la ville de Nice, avec ses palmiers et ces dits, 'oiseaux du Paradis', qui semblent espionner de toute part.",
         "description": "mosaique, lelly, france, saintgratien, floral, sol, balcon",
         "support": "Sol",
@@ -378,7 +313,7 @@
     },
     {
         "id": 6091,
-        "image": "/images/gallery/Sol/BALCON-POSE-SAINT-GRATIEN-95, REALISE-ENTRE-2011-2012-INTITULE-JALOUSIES-ET-INSPIRE-PAR-LA-VEGETATION-DE-LA-VILLE-DE-NICE-ET-SES-OISEAUX-DU-PARADIS/02-DSCN4021.jpg",
+        "image": "/images/gallery/Sol/BALCON-POSE-SAINT-GRATIEN-95-REALISE-ENTRE-2011-2012-INTITULE-JALOUSIES-ET-INSPIRE-PAR-LA-VEGETATION-DE-LA-VILLE-DE-NICE-ET-SES-OISEAUX-DU-PARADIS/02-DSCN4021.jpg",
         "title": "",
         "description": "mosaique, lelly, france, saintgratien, floral, sol, balcon",
         "support": "Sol",
@@ -386,7 +321,7 @@
     },
     {
         "id": 6092,
-        "image": "/images/gallery/Sol/BALCON-POSE-SAINT-GRATIEN-95, REALISE-ENTRE-2011-2012-INTITULE-JALOUSIES-ET-INSPIRE-PAR-LA-VEGETATION-DE-LA-VILLE-DE-NICE-ET-SES-OISEAUX-DU-PARADIS/02-DSCN4022.jpg",
+        "image": "/images/gallery/Sol/BALCON-POSE-SAINT-GRATIEN-95-REALISE-ENTRE-2011-2012-INTITULE-JALOUSIES-ET-INSPIRE-PAR-LA-VEGETATION-DE-LA-VILLE-DE-NICE-ET-SES-OISEAUX-DU-PARADIS/02-DSCN4022.jpg",
         "title": "",
         "description": "mosaique, lelly, france, saintgratien, floral, sol, balcon",
         "support": "Sol",
@@ -394,7 +329,7 @@
     },
     {
         "id": 6093,
-        "image": "/images/gallery/Sol/BALCON-POSE-SAINT-GRATIEN-95, REALISE-ENTRE-2011-2012-INTITULE-JALOUSIES-ET-INSPIRE-PAR-LA-VEGETATION-DE-LA-VILLE-DE-NICE-ET-SES-OISEAUX-DU-PARADIS/02-DSCN4023.jpg",
+        "image": "/images/gallery/Sol/BALCON-POSE-SAINT-GRATIEN-95-REALISE-ENTRE-2011-2012-INTITULE-JALOUSIES-ET-INSPIRE-PAR-LA-VEGETATION-DE-LA-VILLE-DE-NICE-ET-SES-OISEAUX-DU-PARADIS/02-DSCN4023.jpg",
         "title": "",
         "description": "mosaique, lelly, france, saintgratien, floral, sol, balcon",
         "support": "Sol",
@@ -402,7 +337,7 @@
     },
     {
         "id": 6094,
-        "image": "/images/gallery/Sol/BALCON-POSE-SAINT-GRATIEN-95, REALISE-ENTRE-2011-2012-INTITULE-JALOUSIES-ET-INSPIRE-PAR-LA-VEGETATION-DE-LA-VILLE-DE-NICE-ET-SES-OISEAUX-DU-PARADIS/02-DSCN4024.jpg",
+        "image": "/images/gallery/Sol/BALCON-POSE-SAINT-GRATIEN-95-REALISE-ENTRE-2011-2012-INTITULE-JALOUSIES-ET-INSPIRE-PAR-LA-VEGETATION-DE-LA-VILLE-DE-NICE-ET-SES-OISEAUX-DU-PARADIS/02-DSCN4024.jpg",
         "title": "",
         "description": "mosaique, lelly, france, saintgratien, floral, sol, balcon",
         "support": "Sol",
@@ -410,7 +345,7 @@
     },
     {
         "id": 6095,
-        "image": "/images/gallery/Sol/BALCON-POSE-SAINT-GRATIEN-95, REALISE-ENTRE-2011-2012-INTITULE-JALOUSIES-ET-INSPIRE-PAR-LA-VEGETATION-DE-LA-VILLE-DE-NICE-ET-SES-OISEAUX-DU-PARADIS/02-DSCN4025.jpg",
+        "image": "/images/gallery/Sol/BALCON-POSE-SAINT-GRATIEN-95-REALISE-ENTRE-2011-2012-INTITULE-JALOUSIES-ET-INSPIRE-PAR-LA-VEGETATION-DE-LA-VILLE-DE-NICE-ET-SES-OISEAUX-DU-PARADIS/02-DSCN4025.jpg",
         "title": "",
         "description": "mosaique, lelly, france, saintgratien, floral, sol, balcon",
         "support": "Sol",
@@ -418,7 +353,7 @@
     },
     {
         "id": 6096,
-        "image": "/images/gallery/Sol/BALCON-POSE-SAINT-GRATIEN-95, REALISE-ENTRE-2011-2012-INTITULE-JALOUSIES-ET-INSPIRE-PAR-LA-VEGETATION-DE-LA-VILLE-DE-NICE-ET-SES-OISEAUX-DU-PARADIS/02-DSCN4026.jpg",
+        "image": "/images/gallery/Sol/BALCON-POSE-SAINT-GRATIEN-95-REALISE-ENTRE-2011-2012-INTITULE-JALOUSIES-ET-INSPIRE-PAR-LA-VEGETATION-DE-LA-VILLE-DE-NICE-ET-SES-OISEAUX-DU-PARADIS/02-DSCN4026.jpg",
         "title": "",
         "description": "mosaique, lelly, france, saintgratien, floral, sol, balcon",
         "support": "Sol",
@@ -426,7 +361,7 @@
     },
     {
         "id": 6097,
-        "image": "/images/gallery/Sol/BALCON-POSE-SAINT-GRATIEN-95, REALISE-ENTRE-2011-2012-INTITULE-JALOUSIES-ET-INSPIRE-PAR-LA-VEGETATION-DE-LA-VILLE-DE-NICE-ET-SES-OISEAUX-DU-PARADIS/02-DSCN4027.jpg",
+        "image": "/images/gallery/Sol/BALCON-POSE-SAINT-GRATIEN-95-REALISE-ENTRE-2011-2012-INTITULE-JALOUSIES-ET-INSPIRE-PAR-LA-VEGETATION-DE-LA-VILLE-DE-NICE-ET-SES-OISEAUX-DU-PARADIS/02-DSCN4027.jpg",
         "title": "",
         "description": "mosaique, lelly, france, saintgratien, floral, sol, balcon",
         "support": "Sol",

@@ -153,5 +153,70 @@
         "description": "mosaique, lelly, france, parisien, salle de bain, piece, interieur",
         "support": "Pièce",
         "region": "Paris-IDF"
+    },
+    {
+        "//album": "n°611",
+        "id": 6360,
+        "image": "/images/gallery/Salle-de-bain/CHAMPAGNAC-LA-RIVIERE-DANS LE-LIMOUSIN-SALLE-DE-BAIN-1996-ENVIRON-3M2/1-0275-i830.jpg",
+        "title": "À la suite de ces pavements, en 1996, mes parents me demandent à leur tour d’habiller le plancher de la salle de bain de la maison familiale, en Haute Vienne. Pour variations nouvelles, je songe aux branchages dans un travail fin et complexe, très plein, à l’image de cette maison ancienne. Des années plus tard, la salle de bain sera modernisée avec le remplacement de la baignoire et du bidet par une douche. Amputée d’une petite partie, le sol survivra.",
+        "description": "mosaique, lelly, france, limousin, grand-parents, dessin, fleurs, decoration, sol",
+        "support": "sol",
+        "region": "Limousin"
+    },
+    {
+        "id": 6361,
+        "image": "/images/gallery/Salle-de-bain/CHAMPAGNAC-LA-RIVIERE-DANS LE-LIMOUSIN-SALLE-DE-BAIN-1996-ENVIRON-3M2/2-0275-i831.jpg",
+        "title": "",
+        "description": "mosaique, lelly, france, paris, voisin, dessin, tourbillon, ombres, blanc",
+        "support": "sol",
+        "region": "Limousin"
+    },
+    {
+        "id": 6362,
+        "image": "/images/gallery/Salle-de-bain/CHAMPAGNAC-LA-RIVIERE-DANS LE-LIMOUSIN-SALLE-DE-BAIN-1996-ENVIRON-3M2/3-0275-i832.jpg",
+        "title": "",
+        "description": "mosaique, lelly, france, paris, voisin, dessin, tourbillon, ombres, blanc",
+        "support": "sol",
+        "region": "Limousin"
+    },
+    {
+        "id": 6363,
+        "image": "/images/gallery/Salle-de-bain/CHAMPAGNAC-LA-RIVIERE-DANS LE-LIMOUSIN-SALLE-DE-BAIN-1996-ENVIRON-3M2/4-0275-i833.jpg",
+        "title": "",
+        "description": "mosaique, lelly, france, paris, voisin, dessin, tourbillon, ombres, blanc",
+        "support": "sol",
+        "region": "Limousin"
+    },
+    {
+        "id": 6364,
+        "image": "/images/gallery/Salle-de-bain/CHAMPAGNAC-LA-RIVIERE-DANS LE-LIMOUSIN-SALLE-DE-BAIN-1996-ENVIRON-3M2/5-0275-i834.jpg",
+        "title": "",
+        "description": "mosaique, lelly, france, paris, voisin, dessin, tourbillon, ombres, blanc",
+        "support": "sol",
+        "region": "Limousin"
+    },
+    {
+        "id": 6365,
+        "image": "/images/gallery/Salle-de-bain/CHAMPAGNAC-LA-RIVIERE-DANS LE-LIMOUSIN-SALLE-DE-BAIN-1996-ENVIRON-3M2/6-0275-i835.jpg",
+        "title": "",
+        "description": "mosaique, lelly, france, paris, voisin, dessin, tourbillon, ombres, blanc",
+        "support": "sol",
+        "region": "Limousin"
+    },
+    {
+        "id": 6366,
+        "image": "/images/gallery/Salle-de-bain/CHAMPAGNAC-LA-RIVIERE-DANS LE-LIMOUSIN-SALLE-DE-BAIN-1996-ENVIRON-3M2/7-0275-i836.jpg",
+        "title": "",
+        "description": "mosaique, lelly, france, paris, voisin, dessin, tourbillon, ombres, blanc",
+        "support": "sol",
+        "region": "Limousin"
+    },
+    {
+        "id": 6367,
+        "image": "/images/gallery/Salle-de-bain/CHAMPAGNAC-LA-RIVIERE-DANS LE-LIMOUSIN-SALLE-DE-BAIN-1996-ENVIRON-3M2/8-0275-i837.jpg",
+        "title": "",
+        "description": "mosaique, lelly, france, paris, voisin, dessin, tourbillon, ombres, blanc",
+        "support": "sol",
+        "region": "Limousin"
     }
 ]

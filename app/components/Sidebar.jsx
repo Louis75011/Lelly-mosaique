@@ -61,10 +61,8 @@ export default function Sidebar() {
           {/* Bloc milieu : admin */}
           <div className={styles.note}>
             <h4>À venir prochainement</h4>
-            <ul>
-              <li>↪︎ Connexion</li>
-              <li>↪︎ Panneau Admin</li>
-            </ul>
+              {/* <li>↪︎ Connexion</li> */}
+              <p>↪︎ Panneau Admin</p>
           </div>
 
           {/* Bloc bas : liens légaux */}

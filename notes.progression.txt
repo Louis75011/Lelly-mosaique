@@ -1,0 +1,15 @@
+Panneaux admin et modifications d'image.
+Condition clé : ne plus dépendre de /public ni de JSON commits. Hébergement statique est non-modifiable en prod. Il faut un stockage externe + une base ou un index dynamique.
+
+Architecture cible
+Authentification: NextAuth (Credentials ou Email-link).
+Stockage images: S3 compatible (Cloudflare R2 recommandé / Firebase ?) ou S3.
+Métadonnées: Postgres (Prisma) ou KV/R2 index.json versionné.
+Admin UI: /admin/galerie avec drag-and-drop, création d’items, édition. + Création d’un item en base + Formulaire d’upload admin (extrait)
+
+Adaptation côté galerie
+Remplacer les imports JSON statiques par un fetch dynamique de la base:
+
+Choix rapides
+Hébergement Cloudflare Pages → privilégier Cloudflare R2.
+Pas de mutation du repo par l’artiste. Elle n’a besoin que d’un compte et du panneau /admin/galerie.

@@ -25,7 +25,7 @@ export default function ContactPage() {
           <div className="grid-2">
             <div className="card elevated">
               <h2 className={styles.boxTitle}>Envoyez un courriel</h2>
-              <p className={styles.boxLead}>N’hésitez pas à nous contacter pour toute question ou projet de mosaïque (automatisation des courriels à venir).</p>
+              <p className={styles.boxLead}>N’hésitez pas à nous contacter pour toute question ou projet de mosaïque (automatisation de l'envoie des courriels à venir).</p>
 
               <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
                 <div className={styles.row}>
@@ -86,6 +86,80 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      {/* BREVO
+      // async function handleSubmit(e) {
+//     e.preventDefault();
+//     const fd = new FormData(e.currentTarget);
+//     const payload = {
+//       name: fd.get('name')?.toString().trim(),
+//       email: fd.get('email')?.toString().trim(),
+//       subject: fd.get('subject')?.toString().trim(),
+//       message: fd.get('message')?.toString().trim(),
+//       company: fd.get('company')?.toString().trim(), // honeypot
+//     };
+//     if (payload.company) return; // bot
+
+//     const btn = e.currentTarget.querySelector('button[type="submit"]');
+//     btn.disabled = true;
+
+//     try {
+//       console.log('POST /api/contact', payload);
+//       const res = await fetch('/api/contact', {
+//         method: 'POST',
+//         headers: { 'content-type':'application/json' },
+//         body: JSON.stringify(payload),
+//       });
+//       const data = await res.json();
+//       console.log('Response', res.status, data);
+//       if (!res.ok || !data.ok) throw new Error(data.error || 'Erreur');
+//       alert('Message envoyé.');
+//       e.currentTarget.reset();
+//     } catch (err) {
+//       console.error(err);
+//       alert("Échec de l’envoi.");
+//     } finally {
+//       btn.disabled = false;
+//     }
+//   }
+//   <section className="section">
+//         <div className="container">
+//           <div className="grid-2">
+//             <div className="card elevated">
+//               <h2 className={styles.boxTitle}>Envoyez un courriel</h2>
+//               <p className={styles.boxLead}>
+//                 N’hésitez pas à nous contacter pour toute question ou projet de mosaïque.
+//               </p>
+
+//               <form className={styles.form} onSubmit={handleSubmit}>
+//                 <input type="text" name="company" tabIndex={-1} autoComplete="off"
+//                   style={{position:'absolute',left:'-9999px'}} aria-hidden />
+
+//                 <div className={styles.row}>
+//                   <div>
+//                     <label>Nom complet</label>
+//                     <input name="name" placeholder="Votre nom" required />
+//                   </div>
+//                   <div>
+//                     <label>Adresse email</label>
+//                     <input type="email" name="email" placeholder="votre@email.com" required />
+//                   </div>
+//                 </div>
+//                 <div>
+//                   <label>Sujet</label>
+//                   <input name="subject" placeholder="Objet de votre message" />
+//                 </div>
+//                 <div>
+//                   <label>Message</label>
+//                   <textarea name="message" rows={6} placeholder="Écrivez votre message ici..." required />
+//                 </div>
+
+//                 <button type="submit" className="btn">
+//                   <Mail width={18} height={18} />
+//                   Envoyer le message
+//                 </button>
+//               </form>
+//             </div>
+      */}
     </>
   );
 }

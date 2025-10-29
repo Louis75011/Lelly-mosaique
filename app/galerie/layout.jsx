@@ -1,3 +1,4 @@
+// app\galerie\layout.jsx
 export const metadata = {
   title: 'Galerie — Lelly Mosaïque',
   description: 'Albums et catégories de mosaïques.'

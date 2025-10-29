@@ -5,53 +5,39 @@ import { useEffect, useMemo, useState } from 'react';
 import { Images, X } from 'lucide-react';
 import styles from './page.module.scss';
 
-import divers from '../data/galery-Divers.json';
-import escalier from '../data/galery-Escalier.json';
-import mural from '../data/galery-Mural.json';
-import plafond from '../data/galery-Plafond.json';
-import salleDeBain from '../data/galery-Salle-de-bain.json';
-import sol from '../data/galery-Sol.json';
-import table from '../data/galery-Table.json';
-import tableau from '../data/galery-Tableau.json';
-import tombe from '../data/galery-Tombe.json';
-
-const CATS = ['Divers', 'Escalier', 'Mural', 'Plafond', 'Salle de bain', 'Sol', 'Table', 'Tableaux', 'Tombe'];
-const DATA_BY_CAT = { Divers: divers, Escalier: escalier, Mural: mural, Plafond: plafond, 'Salle de bain': salleDeBain, Sol: sol, Table: table, Tableaux: tableau, Tombe: tombe };
-
-const normSrc = (s) => (s || '').replace(/^\/public(?=\/)/, '');
+const CATS = ['Divers','Escalier','Mural','Plafond','Salle de bain','Sol','Table','Tableaux','Tombe'];
 
 export default function GaleriePage() {
   const [cat, setCat] = useState('Mural');
+  const [items, setItems] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [preview, setPreview] = useState(null);
 
-  // Liste flat normalisée
-  const flat = useMemo(() => {
-    const src = DATA_BY_CAT[cat] || [];
-    return src.map((it, i) => ({
-      key: it.id ?? `${cat}-${i}`,
-      src: normSrc(it.image),
-      title: (it.title || '').trim(),
-      region: it.region || '',
-      support: it.support || ''
-    }));
+  useEffect(() => {
+    let abort = false;
+    setLoading(true);
+    fetch(`/api/gallery?cat=${encodeURIComponent(cat)}`, { cache: 'no-store' })
+      .then(r => r.json())
+      .then(d => { if (!abort) setItems(d.items || []); })
+      .finally(() => { if (!abort) setLoading(false); });
+    return () => { abort = true; };
   }, [cat]);
 
-  // Regroupement par titres
+  // Groupes: chaque item avec title non vide ouvre un nouveau bloc
   const groups = useMemo(() => {
-    const res = [];
-    let current = null;
-    for (const it of flat) {
-      if (it.title) { current = { heading: it.title, items: [] }; res.push(current); }
+    const res = []; let current = null;
+    for (const it of items) {
+      const hasTitle = (it.title || '').trim().length > 0;
+      if (hasTitle) { current = { heading: it.title, items: [] }; res.push(current); }
       if (!current) { current = { heading: null, items: [] }; res.push(current); }
       current.items.push(it);
     }
     return res;
-  }, [flat]);
+  }, [items]);
 
-  // Fermeture clavier lightbox
   useEffect(() => {
     if (!preview) return;
-    const onKey = (e) => { if (['Escape', 'Enter', ' '].includes(e.key)) setPreview(null); };
+    const onKey = e => { if (['Escape','Enter',' '].includes(e.key)) setPreview(null); };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
   }, [preview]);
@@ -72,17 +58,15 @@ export default function GaleriePage() {
         </div>
       </section>
 
-      <p className={styles.note}>
-        Le cœur de l’œuvre prend place ici. De nouvelles réalisations seront ajoutées à l'avenir.
-      </p>
+      <p className={styles.note}>Le cœur de l’œuvre prend place ici. De nouvelles réalisations seront ajoutées.</p>
 
       <section className="section">
         <div className="container">
-
           <main className={styles.main}>
             <p className={styles.systemeOnglet}>
               Sélectionnez une catégorie ci-dessous pour parcourir les mosaïques correspondantes :
             </p>
+
             <nav className={styles.tabs} role="tablist" aria-label="Catégories">
               {CATS.map((c) => {
                 const active = c === cat;
@@ -101,24 +85,24 @@ export default function GaleriePage() {
               })}
             </nav>
 
+            {loading ? <p>Chargement…</p> : null}
 
-
-            {groups.map((g, idx) => (
+            {!loading && groups.map((g, idx) => (
               <section key={`g-${idx}`} className={styles.project}>
                 {g.heading ? <h3 className={styles.projectTitle}>{g.heading}</h3> : null}
                 <div className={styles.grid} aria-live="polite">
                   {g.items.map((it) => (
-                    <figure key={it.key} className={styles.card}>
+                    <figure key={it.id} className={styles.card}>
                       <button
                         type="button"
                         className={styles.zoomBtn}
                         aria-label="Agrandir l’image"
-                        onClick={() => setPreview({ src: it.src, alt: it.title || `Image ${it.key}` })}
+                        onClick={() => setPreview({ src: it.image, alt: it.title || `Image ${it.id}` })}
                         title="Agrandir"
                       >
                         <img
-                          src={it.src}
-                          alt={it.title || `Image ${it.key}`}
+                          src={it.image}
+                          alt={it.title || `Image ${it.id}`}
                           loading="eager"
                           fetchPriority="high"
                           decoding="sync"

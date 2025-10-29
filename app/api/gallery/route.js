@@ -1,11 +1,9 @@
-export const runtime = 'edge';
+// app/api/gallery/route.js
+export const runtime = 'nodejs';
+
+import albums from '@/app/data/gallery.json';
 
 export async function GET() {
-  const res = await fetch(
-    new URL('/data/gallery.json', import.meta.url)
-  );
-  const albums = await res.json();
-
   return new Response(JSON.stringify({ albums }), {
     headers: { 'content-type': 'application/json' },
   });

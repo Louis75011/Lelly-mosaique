@@ -10,14 +10,28 @@ import sol from '../../data/galery-Sol.json';
 import table from '../../data/galery-Table.json';
 import tableau from '../../data/galery-Tableau.json';
 import tombe from '../../data/galery-Tombe.json';
+import piscine from '../../data/galery-Piscine.json';
 
-const CATS = ['Divers','Escalier','Mural','Plafond','Salle de bain','Sol','Table','Tableaux','Tombe'];
+const CATS = [
+  'Divers',
+  'Escalier',
+  'Mural',
+  'Piscine',
+  'Plafond',
+  'Salle de bain',
+  'Sol',
+  'Table',
+  'Tableaux',
+  'Tombe'
+];
+
 const DATA_BY_CAT = {
   Divers: divers,
   Escalier: escalier,
   Mural: mural,
+  Piscine: piscine,
   Plafond: plafond,
-  'Salle de bain': salleDeBain, // libellé avec espace
+  'Salle de bain': salleDeBain,
   Sol: sol,
   Table: table,
   Tableaux: tableau,

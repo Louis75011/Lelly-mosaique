@@ -1,14 +1,18 @@
-// app\page.jsx
 import Hero from './components/Hero';
 import FeatureCard from './components/FeatureCard';
 import StatBadge from './components/StatBadge';
 import quotes from './data/quotes.json';
-import heroData from './data/hero.json';
+// import heroData from './data/hero.json';    // ❌ à retirer
+import piscineGallery from './data/galery-Piscine.json'; // ✅ nouveau
 import styles from './page.module.scss';
 
 export default function HomePage() {
   const q = quotes[0];
-  const images = heroData.map(x => x.cover); // => /images/hero/...
+
+  // on réutilise les mêmes visuels que pour l’onglet Piscine // galery-Piscine.json -> champ "image"
+  const images = piscineGallery
+    .filter(x => x.image)          // sécurité
+    .map(x => x.image);            // => /images/hero/...
 
   return (
     <section className="section legal-section">
@@ -34,24 +38,13 @@ export default function HomePage() {
             </div>
           </section>
 
-          {/* const NAV = [
-  { href: '/', label: 'Accueil' },
-  { href: '/artiste', label: 'Présentation' },
-  { href: '/galerie', label: 'Galerie' },
-  { href: '/contact', label: 'Contact' },
-];
-
-const LEGAL = [
-  { href: '/legal/rgpd', label: 'RGPD' },
-  { href: '/legal/cookies', label: 'Cookies' },
-  { href: '/legal/confidentialite', label: 'Confidentialité' },
-]; */}
-
-
           <section className={`section ${styles.quote}`}>
             <div className="container">
-              <blockquote>« {q.text} »<br /><span className="text-muted">— {q.author}</span></blockquote>
-              <StatBadge label="Depuis" value="1980" note="+de 40ans d’expérience" />
+              <blockquote>
+                « {q.text} »<br />
+                <span className="text-muted">— {q.author}</span>
+              </blockquote>
+              <StatBadge label="Depuis" value="1980" note="+ de 40 ans d’expérience" />
             </div>
           </section>
         </main>

@@ -24,12 +24,14 @@
   grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));
   gap:var(--gap);
   place-items:start;
-  /* 6 rangées maxi en desktop */
+
   @media (min-width: 1024px) {
-    max-height: calc(var(--thumb-h) * 6 + 5 * var(--gap)); /* 6 lignes + 5 gaps */
-    overflow:hidden;
+    /* on laisse la grille prendre toute sa hauteur */
+    max-height: none;
+    overflow: visible;
   }
 }
+
 
 .card { border:1px solid #eee; background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 1px 4px rgba(0,0,0,.06); }
 .zoomBtn { display:block; padding:0; margin:0; background:transparent; border:0; width:100%; cursor:zoom-in; }

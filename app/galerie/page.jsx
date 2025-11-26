@@ -5,7 +5,18 @@ import { useEffect, useMemo, useState } from 'react';
 import { Images, X } from 'lucide-react';
 import styles from './page.module.scss';
 
-const CATS = ['Divers', 'Escalier', 'Mural', 'Plafond', 'Salle de bain', 'Sol', 'Table', 'Tableaux', 'Tombe'];
+const CATS = [
+  'Divers',
+  'Escalier',
+  'Mural',
+  'Piscine',
+  'Plafond',
+  'Salle de bain',
+  'Sol',
+  'Table',
+  'Tableaux',
+  'Tombe'
+];
 
 export default function GaleriePage() {
   const [cat, setCat] = useState('Mural');

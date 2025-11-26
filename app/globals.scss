@@ -72,6 +72,7 @@ a:hover {
   display: grid;
   grid-template-columns: 1.1fr .9fr;
   gap: var(--gap);
+      padding: 0 20px;
 }
 
 @media (max-width: 980px) {
@@ -148,6 +149,10 @@ label {
 // .art-section header {
 //   width: 100%
 // }
+
+.text-center {
+  text-align: center;
+}
 
 .hero .title {
   text-align: center;

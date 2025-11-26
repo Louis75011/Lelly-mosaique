@@ -49,7 +49,7 @@ export default function RGPD() {
             <h2>Droits</h2>
             <p>Accès, rectification, effacement, limitation, opposition, portabilité. CNIL : cnil.fr.</p>
 
-            <p className="text-muted">Dernière mise à jour : 27/10/2025.</p>
+            <p className="text-muted">Dernière mise à jour : 26/11/2025.</p>
             <button className="btn" data-open-cookie-panel>Gérer mes cookies</button>
           </div>
 

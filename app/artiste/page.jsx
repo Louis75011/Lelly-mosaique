@@ -18,46 +18,74 @@ export default function PageArtiste() {
           </header>
 
           {/* Bloc biographie */}
-          <section className="section">
+          {/* Bloc biographie */}
+          <section className="container">
             <article className="card legal-card">
 
               <h2>Parcours</h2>
+              <h3>Biographie et style</h3>
               <p>
-                Initiée à la mosaïque dès 1980, Nelly Charamnac fait de la patience son alliée, composant des œuvres où l’agencement minutieux des tesselles révèle une recherche constante des matériaux authentiques, de la lumière, et du mouvement. Son univers artistique se distingue par la valorisation du rythme des motifs et l’équilibre subtil des couleurs, conférant à chaque création une énergie poétique unique.
+                Active depuis 1980, Nelly Charamnac se distingue par une maîtrise
+                exceptionnelle du travail des tesselles, ces morceaux de pierres,
+                céramiques ou verres assemblés avec patience et précision.
+              </p>
+              <p>
+                Son art met à l&apos;honneur les matières naturelles, la lumière et
+                le mouvement, conférant à ses œuvres une dimension vivante, poétique
+                et rythmique, souvent admirée pour sa sensibilité à l&apos;équilibre
+                des couleurs et à la dynamique du motif.
+              </p>
+              <p>
+                Ainsi, madame allie un savoir-faire traditionnel et une recherche
+                plastique, apportant à la mosaïque une profondeur et une authenticité
+                reconnues dans la profession.
               </p>
 
-              <h3>Enseignement</h3>
+              <h3>Engagement artistique et pédagogique</h3>
               <p>
-                Diplômée de l’ADAC, Nelly s’appuie sur une expertise technique solide pour animer cours et ateliers de mosaïque à Paris. Elle privilégie l’exigence et l’indépendance créative, des valeurs transmises avec passion à des apprenants venus autant des milieux amateurs que professionnels. Sa pédagogie, ouverte aux traditions — romaines, byzantines — ainsi qu’aux approches contemporaines, favorise l’exploration et l’innovation.
+                Maître mosaïste formée à l&apos;ADAC, elle dispense des cours et
+                stages de mosaïque à Paris, transmettant, non sans pédagogie, une
+                rigueur technique et un esprit de liberté créative appréciés par ses
+                élèves, dont plusieurs sont aujourd&apos;hui eux-mêmes artistes
+                professionnels.
+              </p>
+              <p>
+                Son enseignement inclut aussi bien la mosaïque romaine, byzantine,
+                que contemporaine, ce qui témoigne d&apos;une polyvalence et d&apos;une
+                ouverture à la fois à la tradition et à l&apos;innovation.
               </p>
 
-              <h3>Repères professionnels</h3>
-              <ul className={styles.facts}>
-                <li>
-                  <strong>Activité de mosaïste indépendante</strong> : Immatriculée en tant qu’artisane culturelle (APE 8552Z) du <time dateTime="2011-06-16">16/06/2011</time> au <time dateTime="2020-05-04">04/05/2020</time>.
-                  <Link href="https://entreprises.lefigaro.fr/madame-nelly-lelly-75/entreprise-533017778" target="_blank" rel="noopener">
-                    Fiche publique
-                  </Link>.
-                </li>
-                <li>
-                  <strong>Transmission reconnue</strong> : L’impact de son enseignement se mesure à travers des parcours d’anciens élèves, devenus artistes ou enseignants à leur tour, et les témoignages de professionnels mentionnant sa formation et ses stages à Paris.
-                </li>
-              </ul>
-
-              <h3>Rayonnement et engagement</h3>
+              <h3>Reconnaissance et rayonnement</h3>
               <p>
-                Depuis plus de trois décennies, Nelly contribue activement au rayonnement de la mosaïque en France. Son atelier est mentionné dans des annuaires spécialisés et elle figure dans diverses biographies d’artistes, reflet d’une reconnaissance pérenne dans le champ des arts décoratifs. Son expertise est saluée lors de festivals, rencontres mosaïques et collaborations, confirmant son rôle dans la transmission et le renouveau du métier.
+                Son nom est associé depuis plus de trente ans à l&apos;excellence
+                mosaïste française, son atelier étant référencé dans plusieurs
+                annuaires d&apos;artistes spécialisés. Son renom s&apos;étend ainsi
+                aux annuaires professionnels, témoignage d&apos;une carrière solide,
+                estimée tant par la critique que par ses pairs.
+              </p>
+              <p>
+                La mosaïste apparaît dans les biographies d&apos;artistes confirmés
+                (cf. Claire Guérin, ancienne élève, aujourd&apos;hui professeure à
+                Paris) et dans les classements professionnels, reflet d&apos;un
+                rayonnement durable.
               </p>
 
               <h3>Expositions et collaborations</h3>
               <p>
-                Forte de nombreuses expositions et projets collectifs, elle partage régulièrement ses expériences lors d’événements dédiés, riches en échanges et en découvertes. Cette implication favorise la vitalité du secteur mosaïste et atteste d'un engagement continu en faveur de l’art et de sa diffusion.
+                Elle a collaboré à de nombreux projets artistiques et expositions,
+                partageant ses savoirs lors de rencontres mosaïques, festivals et
+                ateliers ponctuels, et contribuant ainsi à l&apos;essor du renouveau
+                mosaïque en France.
               </p>
+
+              <Link href="https://entreprises.lefigaro.fr/madame-nelly-lelly-75/entreprise-533017778" target="_blank" rel="noopener">
+                Fiche publique
+              </Link>.
             </article>
           </section>
 
           {/* Chaîne vidéo */}
-          <section className="section">
+          <section className="container">
             <article className="card legal-card">
               <h2>Vidéos</h2>
               <p>
@@ -68,7 +96,7 @@ export default function PageArtiste() {
               <div className={styles.videoGrid}>
                 <aside className={styles.videoAside}>
                   <h3>Chaîne Dailymotion</h3>
-                  <p>@LELLYM — publications et playlists.</p>
+                  <p><b>@LELLYM — publications et playlists.</b></p>
                   <p>
                     <Link className="btn" href="https://www.dailymotion.com/LELLYM" target="_blank" rel="noopener">
                       Ouvrir la chaîne
@@ -91,16 +119,35 @@ export default function PageArtiste() {
           </section>
 
           {/* Encadré synthèse */}
-          <section className={`section ${styles.retention}`}>
-  <article className="container">
-    <h2>À retenir</h2>
-    <ul className={styles.bullets}>
-      <li>Alliance du savoir-faire traditionnel et d’une recherche plastique exigeante.</li>
-      <li>Transmission active : cours et stages, rayonnement durable à Paris.</li>
-      <li>Parcours professionnel référencé et consultable dans les registres publics.</li>
-    </ul>
-  </article>
-</section>
+          <section className={`container ${styles.retention}`}>
+            <article className="container">
+              <h2>À retenir</h2>
+              <ul className={styles.bullets}>
+                <li>
+                  Plus de quarante ans de pratique mosaïste, fondée sur une maîtrise
+                  remarquable des tesselles et un goût affirmé pour les matières naturelles.
+                </li>
+                <li>
+                  Un style reconnu : œuvres lumineuses, poétiques et rythmées, où
+                  l’équilibre des couleurs et le mouvement du motif occupent une place centrale.
+                </li>
+                <li>
+                  Maître mosaïste formée à l’ADAC : enseignement exigeant, mêlant tradition
+                  romaine et byzantine à des approches contemporaines, avec plusieurs élèves
+                  devenus artistes à leur tour.
+                </li>
+                <li>
+                  Une figure établie du milieu mosaïste français : atelier référencé dans
+                  les annuaires spécialisés et présence dans des biographies d’artistes confirmés.
+                </li>
+                <li>
+                  Participation régulière à expositions, festivals et collaborations,
+                  contribuant activement au renouveau de la mosaïque en France.
+                </li>
+              </ul>
+            </article>
+          </section>
+
         </main>
       </div>
     </section>

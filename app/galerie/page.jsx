@@ -5,7 +5,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { Images, X } from 'lucide-react';
 import styles from './page.module.scss';
 
-const CATS = ['Divers','Escalier','Mural','Plafond','Salle de bain','Sol','Table','Tableaux','Tombe'];
+const CATS = ['Divers', 'Escalier', 'Mural', 'Plafond', 'Salle de bain', 'Sol', 'Table', 'Tableaux', 'Tombe'];
 
 export default function GaleriePage() {
   const [cat, setCat] = useState('Mural');
@@ -37,7 +37,7 @@ export default function GaleriePage() {
 
   useEffect(() => {
     if (!preview) return;
-    const onKey = e => { if (['Escape','Enter',' '].includes(e.key)) setPreview(null); };
+    const onKey = e => { if (['Escape', 'Enter', ' '].includes(e.key)) setPreview(null); };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
   }, [preview]);
@@ -58,7 +58,13 @@ export default function GaleriePage() {
         </div>
       </section>
 
-      <p className={styles.note}>Le cœur de l’œuvre prend place ici. De nouvelles réalisations seront ajoutées.</p>
+      <section className="section">
+        <div className="container">
+          <p className={styles.note}>
+            Le cœur de l’œuvre prend place ici. De nouvelles réalisations seront ajoutées au fil du temps.
+          </p>
+        </div>
+      </section>
 
       <section className="section">
         <div className="container">

@@ -60,7 +60,7 @@ export default function Confidentialite() {
           <h2>Sécurité</h2>
           <p>HTTPS, accès restreints aux environnements, minimisation des données, pas de profilage.</p>
 
-          <p className="text-muted">Dernière mise à jour : 27/10/2025.</p>
+          <p className="text-muted">Dernière mise à jour : 26/11/2025.</p>
         <button className="btn" data-open-cookie-panel>Gérer mes cookies</button>
         </div>
       </section>

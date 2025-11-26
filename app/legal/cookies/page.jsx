@@ -35,7 +35,7 @@ export default function Cookies() {
           <h2>Gérer vos préférences</h2>
           <button className="btn" data-open-cookie-panel>Gérer mes cookies</button>
 
-          <p className="text-muted">Dernière mise à jour : 27/10/2025.</p>
+          <p className="text-muted">Dernière mise à jour : 26/11/2025.</p>
         </div>
       </section>
       </div>

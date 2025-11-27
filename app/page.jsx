@@ -1,3 +1,4 @@
+// app\page.jsx
 import Hero from './components/Hero';
 import FeatureCard from './components/FeatureCard';
 import StatBadge from './components/StatBadge';

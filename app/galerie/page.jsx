@@ -4,16 +4,16 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { Images, X, ChevronLeft, ChevronRight, Plus, Minus } from 'lucide-react';
 import styles from './page.module.scss';
 
-const ALL_CAT = "Vue d’ensemble";
+const ALL_CAT = "VUE D’ENSEMBLE";
 const DEFAULT_CAT = 'Piscine';
 
 const CATS = [
   ALL_CAT,
-  'Piscine',
-  'Divers',
   'Balcon',
   'Escalier',
+  'Divers',
   'Mural',
+  'Piscine',
   'Plafond',
   'Salle de bain',
   'Sol',
@@ -23,7 +23,7 @@ const CATS = [
 ];
 
 const MIN_ZOOM = 1;
-const MAX_ZOOM = 2.5;
+const MAX_ZOOM = 2.5; // Augmenter si qualité d'image assume
 const ZOOM_STEP = 0.25;
 
 export default function GaleriePage() {

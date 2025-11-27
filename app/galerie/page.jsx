@@ -1,17 +1,19 @@
-// app/galerie/page.jsx
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Images, X, ChevronLeft, ChevronRight, Plus, Minus } from 'lucide-react';
 import styles from './page.module.scss';
 
+const ALL_CAT = "Vue d’ensemble";
+const DEFAULT_CAT = 'Piscine';
+
 const CATS = [
-  'Vue d’ensemble',
+  ALL_CAT,
+  'Piscine',
   'Divers',
   'Balcon',
   'Escalier',
   'Mural',
-  'Piscine',
   'Plafond',
   'Salle de bain',
   'Sol',
@@ -25,11 +27,20 @@ const MAX_ZOOM = 2.5;
 const ZOOM_STEP = 0.25;
 
 export default function GaleriePage() {
-  const [cat, setCat] = useState('Piscine');
+  const [cat, setCat] = useState(DEFAULT_CAT);
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
-  // preview = { index: number, zoom: number } | null
+  // preview = { index, zoom, offsetX, offsetY }
   const [preview, setPreview] = useState(null);
+
+  // état de drag (pour le pan à la souris)
+  const dragRef = useRef({
+    dragging: false,
+    startX: 0,
+    startY: 0,
+    baseX: 0,
+    baseY: 0
+  });
 
   // Chargement des données
   useEffect(() => {
@@ -37,7 +48,7 @@ export default function GaleriePage() {
     setLoading(true);
 
     const url =
-      cat === 'Vue d’ensemble'
+      cat === ALL_CAT
         ? '/api/gallery'
         : `/api/gallery?cat=${encodeURIComponent(cat)}`;
 
@@ -46,8 +57,7 @@ export default function GaleriePage() {
       .then((d) => {
         if (abort) return;
 
-        if (cat === 'Vue d’ensemble') {
-          // Fusionne Vue d’ensemblees les catégories, sans doublons d'image
+        if (cat === ALL_CAT) {
           const allArrays = Object.values(d.byCategory || {});
           const merged = [];
           const seen = new Set();
@@ -74,7 +84,7 @@ export default function GaleriePage() {
     };
   }, [cat]);
 
-  // Fermer la preview lorsqu'on change d'onglet (sécurité)
+  // Fermer la preview lorsqu'on change d'onglet
   useEffect(() => {
     setPreview(null);
   }, [cat]);
@@ -82,7 +92,7 @@ export default function GaleriePage() {
   // Groupes: pour "Vue d’ensemble" => une seule grande grille
   const groups = useMemo(() => {
     if (!items.length) return [];
-    if (cat === 'Vue d’ensemble') {
+    if (cat === ALL_CAT) {
       return [{ heading: null, items }];
     }
 
@@ -103,11 +113,11 @@ export default function GaleriePage() {
     return res;
   }, [items, cat]);
 
-  // Ouverture de la lightbox sur un index
+  // Ouverture de la lightbox
   const openPreview = (id) => {
     const index = items.findIndex((it) => it.id === id);
     if (index === -1) return;
-    setPreview({ index, zoom: 1 });
+    setPreview({ index, zoom: 1, offsetX: 0, offsetY: 0 });
   };
 
   const closePreview = () => setPreview(null);
@@ -116,7 +126,7 @@ export default function GaleriePage() {
     setPreview((p) => {
       if (!p || !items.length) return p;
       const prevIndex = (p.index - 1 + items.length) % items.length;
-      return { index: prevIndex, zoom: 1 };
+      return { index: prevIndex, zoom: 1, offsetX: 0, offsetY: 0 };
     });
   };
 
@@ -124,46 +134,108 @@ export default function GaleriePage() {
     setPreview((p) => {
       if (!p || !items.length) return p;
       const nextIndex = (p.index + 1) % items.length;
-      return { index: nextIndex, zoom: 1 };
+      return { index: nextIndex, zoom: 1, offsetX: 0, offsetY: 0 };
     });
   };
 
-  const zoomIn = () => {
+  const zoomIn = () =>
     setPreview((p) => {
       if (!p) return p;
       const next = Math.min(MAX_ZOOM, (p.zoom ?? 1) + ZOOM_STEP);
-      return { ...p, zoom: next };
+      return next <= 1
+        ? { ...p, zoom: 1, offsetX: 0, offsetY: 0 }
+        : { ...p, zoom: next };
     });
-  };
 
-  const zoomOut = () => {
+  const zoomOut = () =>
     setPreview((p) => {
       if (!p) return p;
       const next = Math.max(MIN_ZOOM, (p.zoom ?? 1) - ZOOM_STEP);
-      return { ...p, zoom: next };
+      return next <= 1
+        ? { ...p, zoom: 1, offsetX: 0, offsetY: 0 }
+        : { ...p, zoom: next };
     });
+
+  const resetZoom = () =>
+    setPreview((p) => (p ? { ...p, zoom: 1, offsetX: 0, offsetY: 0 } : p));
+
+  const setOffset = (dx, dy) =>
+    setPreview((p) => {
+      if (!p) return p;
+      if ((p.zoom ?? 1) <= 1) {
+        return { ...p, offsetX: 0, offsetY: 0 };
+      }
+      return {
+        ...p,
+        offsetX: dx,
+        offsetY: dy
+      };
+    });
+
+  // Gestion du drag souris pour le pan
+  const handlePointerDown = (e) => {
+    if (!preview || preview.zoom <= 1) return;
+    e.preventDefault();
+    dragRef.current = {
+      dragging: true,
+      startX: e.clientX,
+      startY: e.clientY,
+      baseX: preview.offsetX || 0,
+      baseY: preview.offsetY || 0
+    };
   };
 
-  const resetZoom = () => {
-    setPreview((p) => (p ? { ...p, zoom: 1 } : p));
+  const handlePointerMove = (e) => {
+    if (!dragRef.current.dragging) return;
+    e.preventDefault();
+    const { startX, startY, baseX, baseY } = dragRef.current;
+    const dx = e.clientX - startX;
+    const dy = e.clientY - startY;
+    setOffset(baseX + dx, baseY + dy);
   };
 
-  // Gestion clavier pour la lightbox
+  const stopDragging = () => {
+    if (!dragRef.current.dragging) return;
+    dragRef.current.dragging = false;
+  };
+
+  // Clavier : navigation + zoom
   useEffect(() => {
     if (!preview) return;
 
     const onKey = (e) => {
+      const relevantKeys = [
+        'Escape',
+        'ArrowLeft',
+        'ArrowRight',
+        'ArrowUp',
+        'ArrowDown',
+        '+',
+        '-',
+        '=',
+        '0',
+        'NumpadAdd',
+        'NumpadSubtract',
+        'Numpad0',
+        'Digit0'
+      ];
+      if (!relevantKeys.includes(e.key) && !relevantKeys.includes(e.code)) {
+        return;
+      }
+
+      e.preventDefault();
+
       if (e.key === 'Escape') {
         closePreview();
       } else if (e.key === 'ArrowLeft') {
         goPrev();
       } else if (e.key === 'ArrowRight') {
         goNext();
-      } else if (e.key === 'ArrowUp' || e.key === '+') {
+      } else if (e.key === 'ArrowUp' || e.key === '+' || e.key === '=' || e.key === 'NumpadAdd') {
         zoomIn();
-      } else if (e.key === 'ArrowDown' || e.key === '-') {
+      } else if (e.key === 'ArrowDown' || e.key === '-' || e.key === 'NumpadSubtract') {
         zoomOut();
-      } else if (e.key === '0') {
+      } else if (e.key === '0' || e.key === 'Numpad0' || e.key === 'Digit0') {
         resetZoom();
       }
     };
@@ -172,11 +244,9 @@ export default function GaleriePage() {
     return () => window.removeEventListener('keydown', onKey);
   }, [preview, items.length]);
 
-  const currentItem =
-    preview && items[preview.index] ? items[preview.index] : null;
-  const currentZoom = preview?.zoom ?? 1;
-
+  // Molette : zoom
   const handleWheel = (e) => {
+    if (!preview) return;
     e.preventDefault();
     if (e.deltaY < 0) {
       zoomIn();
@@ -184,6 +254,12 @@ export default function GaleriePage() {
       zoomOut();
     }
   };
+
+  const currentItem =
+    preview && items[preview.index] ? items[preview.index] : null;
+  const currentZoom = preview?.zoom ?? 1;
+  const offsetX = preview?.offsetX ?? 0;
+  const offsetY = preview?.offsetY ?? 0;
 
   return (
     <>
@@ -208,12 +284,15 @@ export default function GaleriePage() {
             ajoutées au fil du temps.
           </p>
           <p className={styles.note}>
-            L’onglet <b>« Vue d’ensemble »</b> rassemble toutes les mosaïques en un seul
-            album, tandis que les autres catégories présentent chaque série comme un
-            chapitre distinct. <b>En ouvrant une photo</b>, vous pouvez passer à la suivante
-            ou à la précédente grâce aux flèches gauche et droite, puis ajuster le
-            zoom avec la molette de la souris, les flèches haut et bas ou les touches
-            « + » et « – ». La touche « 0 » ramène l’image à sa taille normale.
+            L’onglet <b>« {ALL_CAT} »</b> rassemble toutes les mosaïques en une seule
+            vue, tandis que les autres catégories représentent chaque ensemble
+            comme un album autonome. En ouvrant une photo, vous pouvez passer
+            d’une image à l’autre avec les flèches gauche et droite ou les
+            zones cliquables de part et d’autre. La molette de la souris, les
+            flèches haut et bas ainsi que les touches « + » et « – » permettent
+            d’ajuster le zoom ; un clic maintenu et déplacé autorise ensuite la
+            promenade dans l’image, et la touche « 0 » ramène la vue à son
+            cadrage d’origine.
           </p>
         </div>
       </section>
@@ -299,6 +378,9 @@ export default function GaleriePage() {
             className={styles.lightInner}
             onClick={(e) => e.stopPropagation()}
             onWheel={handleWheel}
+            onPointerMove={handlePointerMove}
+            onPointerUp={stopDragging}
+            onPointerLeave={stopDragging}
           >
             <button
               type="button"
@@ -349,7 +431,10 @@ export default function GaleriePage() {
                 src={currentItem.image}
                 alt={currentItem.title || `Image ${currentItem.id}`}
                 className={styles.lightImage}
-                style={{ transform: `scale(${currentZoom})` }}
+                style={{
+                  transform: `translate(${offsetX}px, ${offsetY}px) scale(${currentZoom})`
+                }}
+                onPointerDown={handlePointerDown}
               />
               {currentItem.title && (
                 <figcaption className={styles.lightCaption}>

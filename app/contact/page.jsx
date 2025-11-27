@@ -62,7 +62,7 @@ export default function ContactPage() {
                 <ul className={styles.infoList}>
                   <li>
                     <span className={styles.ico}><Mail width={18} height={18} /></span>
-                    <span><strong>Email</strong><br /><a href="mailto:charammac.lelly@gmail.com">charammac.lelly@gmail.com</a></span>
+                    <span><strong>Email</strong><br /><a href="mailto:charammac.lelly@gmail.com">charammac.lelly@gmail.com</a><br /><a href="mailto:louis.rouanet@gallia-os.com">louis.rouanet@gallia-os.com</a></span>
                   </li>
                   <li>
                     <span className={styles.ico}><MapPin width={18} height={18} /></span>

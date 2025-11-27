@@ -265,7 +265,7 @@
         "//album": "n°600",
         "id": 6000,
         "image": "/images/gallery/Sol/CHAMBRE-PARENTS-PARIS-LEON-FROT-10m2/10-4-DSC05770.jpg",
-        "title": "Décor floral au sol d'unchambre rue Léon Frot (Paris)",
+        "title": "Décor floral au sol d'unchambre rue Léon Frot.",
         "description": "mosaique, lelly, france, paris, fleur, sol, salle",
         "support": "Sol",
         "region": "Paris-IDF"
@@ -303,67 +303,51 @@
         "region": "Paris-IDF"
     },
     {
-        "//album": "n°603",
-        "id": 6090,
-        "image": "/images/gallery/Sol/BALCON-POSE-SAINT-GRATIEN-95-REALISE-ENTRE-2011-2012-INTITULE-JALOUSIES-ET-INSPIRE-PAR-LA-VEGETATION-DE-LA-VILLE-DE-NICE-ET-SES-OISEAUX-DU-PARADIS/02-DSCN4020.jpg",
-        "title": "Sol de balcon de 3,10m², à Saint-Gratien dans le 95, au 2 Allée de la Musique, réalisé entre 2011 et 2013. Intitulé 'Jalousies', il a été inspiré par la végétation de la ville de Nice, avec ses palmiers et ces dits, 'oiseaux du Paradis', qui semblent espionner de toute part.",
-        "description": "mosaique, lelly, france, saintgratien, floral, sol, balcon",
+        "id": 6006,
+        "image": "/images/gallery/Sol/CHAMBRE-PARENTS-PARIS-LEON-FROT-10m2/DSC05778-03-18-11-sol-chambre-leon-frot.jpg",
+        "title": "",
+        "description": "mosaique, lelly, france, paris, fleur, sol, salle",
+        "support": "Sol",
+        "region": "Paris-IDF"
+    },
+    {
+        "id": 6120,
+        "//album": "n°604",
+        "image": "/images/gallery/Sol/INCRUSTATIONS-CHAMBRE-4-EME-ETAGE-IMMEUBLE-63-RUE-LEON-FROT-DISPARU/02-i560.jpg",
+        "title": "Incrustation dans un appartement rue Léon Frot.",
+        "description": "mosaique, lelly, france, paris, decor, sol, appart",
         "support": "Sol",
         "region": "IDF"
     },
     {
-        "id": 6091,
-        "image": "/images/gallery/Sol/BALCON-POSE-SAINT-GRATIEN-95-REALISE-ENTRE-2011-2012-INTITULE-JALOUSIES-ET-INSPIRE-PAR-LA-VEGETATION-DE-LA-VILLE-DE-NICE-ET-SES-OISEAUX-DU-PARADIS/02-DSCN4021.jpg",
+        "id": 6121,
+        "image": "/images/gallery/Sol/INCRUSTATIONS-CHAMBRE-4-EME-ETAGE-IMMEUBLE-63-RUE-LEON-FROT-DISPARU/02-i561.jpg",
         "title": "",
-        "description": "mosaique, lelly, france, saintgratien, floral, sol, balcon",
+        "description": "mosaique, lelly, france, paris, decor, sol, appart",
         "support": "Sol",
         "region": "IDF"
     },
     {
-        "id": 6092,
-        "image": "/images/gallery/Sol/BALCON-POSE-SAINT-GRATIEN-95-REALISE-ENTRE-2011-2012-INTITULE-JALOUSIES-ET-INSPIRE-PAR-LA-VEGETATION-DE-LA-VILLE-DE-NICE-ET-SES-OISEAUX-DU-PARADIS/02-DSCN4022.jpg",
+        "id": 6122,
+        "image": "/images/gallery/Sol/INCRUSTATIONS-CHAMBRE-4-EME-ETAGE-IMMEUBLE-63-RUE-LEON-FROT-DISPARU/02-i562.jpg",
         "title": "",
-        "description": "mosaique, lelly, france, saintgratien, floral, sol, balcon",
+        "description": "mosaique, lelly, france, paris, decor, sol, appart",
         "support": "Sol",
         "region": "IDF"
     },
     {
-        "id": 6093,
-        "image": "/images/gallery/Sol/BALCON-POSE-SAINT-GRATIEN-95-REALISE-ENTRE-2011-2012-INTITULE-JALOUSIES-ET-INSPIRE-PAR-LA-VEGETATION-DE-LA-VILLE-DE-NICE-ET-SES-OISEAUX-DU-PARADIS/02-DSCN4023.jpg",
+        "id": 6123,
+        "image": "/images/gallery/Sol/INCRUSTATIONS-CHAMBRE-4-EME-ETAGE-IMMEUBLE-63-RUE-LEON-FROT-DISPARU/02-i563.jpg",
         "title": "",
-        "description": "mosaique, lelly, france, saintgratien, floral, sol, balcon",
+        "description": "mosaique, lelly, france, paris, decor, sol, appart",
         "support": "Sol",
         "region": "IDF"
     },
     {
-        "id": 6094,
-        "image": "/images/gallery/Sol/BALCON-POSE-SAINT-GRATIEN-95-REALISE-ENTRE-2011-2012-INTITULE-JALOUSIES-ET-INSPIRE-PAR-LA-VEGETATION-DE-LA-VILLE-DE-NICE-ET-SES-OISEAUX-DU-PARADIS/02-DSCN4024.jpg",
+        "id": 6124,
+        "image": "/images/gallery/Sol/INCRUSTATIONS-CHAMBRE-4-EME-ETAGE-IMMEUBLE-63-RUE-LEON-FROT-DISPARU/02-i564.jpg",
         "title": "",
-        "description": "mosaique, lelly, france, saintgratien, floral, sol, balcon",
-        "support": "Sol",
-        "region": "IDF"
-    },
-    {
-        "id": 6095,
-        "image": "/images/gallery/Sol/BALCON-POSE-SAINT-GRATIEN-95-REALISE-ENTRE-2011-2012-INTITULE-JALOUSIES-ET-INSPIRE-PAR-LA-VEGETATION-DE-LA-VILLE-DE-NICE-ET-SES-OISEAUX-DU-PARADIS/02-DSCN4025.jpg",
-        "title": "",
-        "description": "mosaique, lelly, france, saintgratien, floral, sol, balcon",
-        "support": "Sol",
-        "region": "IDF"
-    },
-    {
-        "id": 6096,
-        "image": "/images/gallery/Sol/BALCON-POSE-SAINT-GRATIEN-95-REALISE-ENTRE-2011-2012-INTITULE-JALOUSIES-ET-INSPIRE-PAR-LA-VEGETATION-DE-LA-VILLE-DE-NICE-ET-SES-OISEAUX-DU-PARADIS/02-DSCN4026.jpg",
-        "title": "",
-        "description": "mosaique, lelly, france, saintgratien, floral, sol, balcon",
-        "support": "Sol",
-        "region": "IDF"
-    },
-    {
-        "id": 6097,
-        "image": "/images/gallery/Sol/BALCON-POSE-SAINT-GRATIEN-95-REALISE-ENTRE-2011-2012-INTITULE-JALOUSIES-ET-INSPIRE-PAR-LA-VEGETATION-DE-LA-VILLE-DE-NICE-ET-SES-OISEAUX-DU-PARADIS/02-DSCN4027.jpg",
-        "title": "",
-        "description": "mosaique, lelly, france, saintgratien, floral, sol, balcon",
+        "description": "mosaique, lelly, france, paris, decor, sol, appart",
         "support": "Sol",
         "region": "IDF"
     },

@@ -11,9 +11,11 @@ import table from '../../data/galery-Table.json';
 import tableau from '../../data/galery-Tableau.json';
 import tombe from '../../data/galery-Tombe.json';
 import piscine from '../../data/galery-Piscine.json';
+import balcon from '../../data/galery-Balcon.json';
 
 const CATS = [
   'Divers',
+  'Balcon',
   'Escalier',
   'Mural',
   'Piscine',
@@ -27,6 +29,7 @@ const CATS = [
 
 const DATA_BY_CAT = {
   Divers: divers,
+  Balcon: balcon,
   Escalier: escalier,
   Mural: mural,
   Piscine: piscine,

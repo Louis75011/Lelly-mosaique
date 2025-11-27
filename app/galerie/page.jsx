@@ -7,6 +7,7 @@ import styles from './page.module.scss';
 
 const CATS = [
   'Divers',
+  'Balcon',
   'Escalier',
   'Mural',
   'Piscine',

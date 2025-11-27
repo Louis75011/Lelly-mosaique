@@ -2,7 +2,7 @@
     {
         "//album": "n°300",
         "id": 3000,
-          "image": "/images/gallery/Mural/COQ-RAYMONDE-BEAUGARD-9003-RUE-DE-LA-FORTAISE-A-PLOUFRAGAN-2021-BRETAGNE/IMG_2816.jpg",
+        "image": "/images/gallery/Mural/COQ-RAYMONDE-BEAUGARD-9003-RUE-DE-LA-FORTAISE-A-PLOUFRAGAN-2021-BRETAGNE/IMG_2816.jpg",
         "title": "Coq dans l'entrée d'une maison rue de la Fortaise à Ploufragan, effectué en 2021.",
         "description": "mosaique, lelly, france, bretagne, coq, mural, entree",
         "support": "Mur",
@@ -185,6 +185,31 @@
         "image": "/images/gallery/Mural/PONCTUATION-FLORALE/46-DSC00760.jpg",
         "title": "",
         "description": "mosaique, lelly, france, paris, floral, mural, ponctuation",
+        "support": "Mur",
+        "region": "Paris-IDF"
+    },
+    {
+        "//album": "n°304",
+        "id": 3150,
+        "image": "/images/gallery/Mural/MURAL-CAVE-DECO-PARIS-LEON-FROT/IMG_3443-mural-cave-leon-frot.jpg",
+        "title": "Grand décor mural dans une cave rue Léon Frot, où un vaste faisceau de lumière colorée répond à deux silhouettes en pied, réalisé à Paris 11ème.",
+        "description": "mosaique, lelly, france, paris, cave, escalier, silhouettes, lumiere, mural",
+        "support": "Mur",
+        "region": "Paris-IDF"
+    },
+    {
+        "id": 3151,
+        "image": "/images/gallery/Mural/MURAL-CAVE-DECO-PARIS-LEON-FROT/IMG_003-mural-cave-leon-frot.jpg",
+        "title": "",
+        "description": "mosaique, lelly, france, paris, cave, escalier, silhouettes, lumiere, mural",
+        "support": "Mur",
+        "region": "Paris-IDF"
+    },
+    {
+        "id": 3152,
+        "image": "/images/gallery/Mural/MURAL-CAVE-DECO-PARIS-LEON-FROT/IMG_0020-001-mural-cave-leon-frot.jpg",
+        "title": "",
+        "description": "mosaique, lelly, france, paris, cave, escalier, silhouettes, lumiere, mural",
         "support": "Mur",
         "region": "Paris-IDF"
     }

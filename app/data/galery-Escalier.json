@@ -145,5 +145,71 @@
         "description": "mosaique, lelly, france, paris, marche, contremarche, rez-de-chaussee",
         "support": "Escalier",
         "region": "Paris-IDF"
+    }    ,
+    {
+        "//album": "n°300",
+        "id": 3000,
+        "image": "/images/gallery/Escalier/Enghien/ENGHIEN-LES-BAINS(95)-ESCALIER-D-ENTREE-2023-01.jpg",
+        "title": "Cet escalier d’entrée, réalisé en 2023 à Enghien-les-Bains, accompagne la montée vers la maison par une succession de contremarches en mosaïque. Les motifs répondent aux lignes du bâti et à la lumière du jardin, tandis que la palette minérale relie l’allée, le perron et le seuil.",
+        "description": "mosaique, lelly, france, enghien-les-bains, escalier, entree, exterieur",
+        "support": "Escalier extérieur",
+        "region": "Paris-IDF"
+    },
+    {
+        "id": 3001,
+        "image": "/images/gallery/Escalier/Enghien/ENGHIEN-LES-BAINS(95)-ESCALIER-D-ENTREE-2023-02.jpg",
+        "title": "",
+        "description": "mosaique, lelly, france, enghien-les-bains, escalier, entree, exterieur",
+        "support": "Escalier extérieur",
+        "region": "Paris-IDF"
+    },
+    {
+        "id": 3002,
+        "image": "/images/gallery/Escalier/Enghien/ENGHIEN-LES-BAINS(95)-ESCALIER-D-ENTREE-2023-03.jpg",
+        "title": "",
+        "description": "mosaique, lelly, france, enghien-les-bains, escalier, entree, exterieur",
+        "support": "Escalier extérieur",
+        "region": "Paris-IDF"
+    },
+    {
+        "id": 3003,
+        "image": "/images/gallery/Escalier/Enghien/ENGHIEN-LES-BAINS(95)-ESCALIER-D-ENTREE-2023-04.jpg",
+        "title": "",
+        "description": "mosaique, lelly, france, enghien-les-bains, escalier, entree, exterieur",
+        "support": "Escalier extérieur",
+        "region": "Paris-IDF"
+    },
+    {
+        "//album": "n°201",
+        "id": 3004,
+        "image": "/images/gallery/Escalier/Enghien/ENGHIEN-LES-BAINS(95)-ESCALIER-D-ENTREE-2023-05.jpg",
+        "title": "",
+        "description": "mosaique, lelly, france, enghien-les-bains, escalier, entree, exterieur",
+        "support": "Escalier extérieur",
+        "region": "Paris-IDF"
+    },
+    {
+        "id": 3005,
+        "image": "/images/gallery/Escalier/Enghien/ENGHIEN-LES-BAINS(95)-ESCALIER-D-ENTREE-2023-06.jpg",
+        "title": "",
+        "description": "mosaique, lelly, france, enghien-les-bains, escalier, entree, exterieur",
+        "support": "Escalier extérieur",
+        "region": "Paris-IDF"
+    },
+    {
+        "id": 3006,
+        "image": "/images/gallery/Escalier/Enghien/ENGHIEN-LES-BAINS(95)-ESCALIER-D-ENTREE-2023-07.jpg",
+        "title": "",
+        "description": "mosaique, lelly, france, enghien-les-bains, escalier, entree, exterieur",
+        "support": "Escalier extérieur",
+        "region": "Paris-IDF"
+    },
+    {
+        "id": 3007,
+        "image": "/images/gallery/Escalier/Enghien/ENGHIEN-LES-BAINS(95)-ESCALIER-D-ENTREE-2023-08.jpg",
+        "title": "",
+        "description": "mosaique, lelly, france, enghien-les-bains, escalier, entree, exterieur",
+        "support": "Escalier extérieur",
+        "region": "Paris-IDF"
     }
 ]
